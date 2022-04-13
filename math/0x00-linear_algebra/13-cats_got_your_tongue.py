@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 import numpy as np
+"""function concatenate"""
+
+
 def np_cat(mat1, mat2, axis=0):
     """
     concatenate with numpy
