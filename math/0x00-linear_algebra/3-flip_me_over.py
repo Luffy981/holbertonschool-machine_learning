@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 def matrix_transpose(matrix):
+    """
+    transpose matrix
+    """
     transpose = []
     for i in range(len(matrix[0])):
         litle = []
