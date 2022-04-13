@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+"""operations with matrix"""
+
+
 def np_elementwise(mat1, mat2):
     """
     performs element-wise addition, subtraction, multiplication, and division
