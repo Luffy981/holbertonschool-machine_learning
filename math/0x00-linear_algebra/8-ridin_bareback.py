@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+"""multiplication matrix"""
+
+
 def mat_mul(mat1, mat2):
     """
     performs matrix multiplication
