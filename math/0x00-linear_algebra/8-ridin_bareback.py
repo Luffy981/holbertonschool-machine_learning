@@ -7,6 +7,8 @@ def mat_mul(mat1, mat2):
     performs matrix multiplication
     """
     mul = []
+    if len(mat1[0)) != len(mat2):
+        return None
     for i in range(len(mat1)):
         lit = []
         for k in range(len(mat2[0])):
