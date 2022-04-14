@@ -22,6 +22,8 @@ def cat_matrices2D(mat1, mat2, axis=0):
     """
     mat1_copy = mydeepcopy(mat1)
     mat2_copy = mydeepcopy(mat2)
+    if len(mat1[0]) != len(mat2[0])
+        return None
     if axis == 0:
         for row in mat2_copy:
             mat1_copy = mat1_copy + [row]
