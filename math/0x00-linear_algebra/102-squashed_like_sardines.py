@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
+"""
+function
+"""
 
 import numpy as np
 import time
 
 def cat_matrices(mat1, mat2, axis=0):
+    """concat"""
     pass
 
 mat1 = [1, 2, 3]
