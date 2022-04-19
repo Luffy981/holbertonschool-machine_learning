@@ -30,7 +30,7 @@ ax1 = plt.subplot2grid((3, 2), (0, 0))
 ax2 = plt.subplot2grid((3, 2), (0, 1))
 ax3 = plt.subplot2grid((3, 2), (1, 0))
 ax4 = plt.subplot2grid((3, 2), (1, 1))
-ax5 = plt.subplot2grid((3, 2), (2, 0), colspan= 2)
+ax5 = plt.subplot2grid((3, 2), (2, 0), colspan=2)
 # Titles
 plt.suptitle('All in One')
 ax2.set_title('Men\'s Height vs Weigh', fontsize='x-small')
