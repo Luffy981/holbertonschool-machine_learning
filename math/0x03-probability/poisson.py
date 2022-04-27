@@ -19,7 +19,8 @@ class Poisson:
             sum_P = 0
             prob = []
             for x in data:
-                sum_P += (self.e**(-self.lambtha) * (self.lambtha ** x)) / factorial(x)
+                factor = (self.lambtha ** x)
+                sum_P += (self.e**(-self.lambtha) * factor) / factorial(x)
                 prob.append(sum_P)
             self.lambtha = round(sum_P, 2)
 
@@ -32,5 +33,9 @@ class Poisson:
 
     def pmf(self, k):
         """probability mass function"""
+        try:
+            k = int(k)
+        except Exception:
+            return 0
         PMF = (self.e**(-self.lambtha) * (self.lambtha ** k)) / factorial(k)
         return PMF
