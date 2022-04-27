@@ -22,8 +22,6 @@ class Poisson:
                 sum_P += (self.e**(-self.lambtha) * (self.lambtha ** x)) / factorial(x)
                 prob.append(sum_P)
             self.lambtha = round(sum_P, 2)
-            plt.plot(data, prob)
-            plt.show()
 
     def factorial(number):
         """Method to calculate Factorial"""
