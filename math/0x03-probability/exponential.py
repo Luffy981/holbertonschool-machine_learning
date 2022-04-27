@@ -17,3 +17,12 @@ class Exponential:
                 raise ValueError("data must contain multiple values")
             for x in data:
                 self.lambtha += self.lambtha * self.e ** (-self.lambtha * x)
+
+    def pdf(self, k):
+        """probability mass function"""
+        try:
+            k = int(k)
+        except Exception:
+            return 0
+        self.PDF = self.lambtha * self.e **(-self.lambtha * k)
+        return self.PDF
