@@ -26,3 +26,12 @@ class Exponential:
             return 0
         self.PDF = self.lambtha * self.e **(-self.lambtha * k)
         return self.PDF
+
+    def cdf(self, k):
+        """Cumulative density function"""
+        try:
+            k = int(k)
+        except Exception:
+            return 0
+        CDF =  self.lambtha * self.e **(-self.lambtha * k)
+        return CDF 
