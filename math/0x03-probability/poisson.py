@@ -7,7 +7,7 @@ class Poisson:
     def __init__(self, data=None, lambtha=1.):
         """Constructor to poisson"""
         self.lambtha = float(lambtha)
-        e = 2.7182818285
+        self.e = 2.7182818285
         if data is None:
             if lambtha <= 0:
                 raise ValueError("lambtha must be a positive value")
@@ -19,9 +19,11 @@ class Poisson:
             sum_P = 0
             prob = []
             for x in data:
-                sum_P += (e**(-lambtha) * (lambtha ** x)) / factorial(x)
+                sum_P += (self.e**(-self.lambtha) * (self.lambtha ** x)) / factorial(x)
                 prob.append(sum_P)
             self.lambtha = round(sum_P, 2)
+            plt.plot(data, prob)
+            plt.show()
 
     def factorial(number):
         """Method to calculate Factorial"""
@@ -29,3 +31,8 @@ class Poisson:
         for num in range(2, number + 1):
             fact = fact * num
         return fact
+
+    def pmf(self, k):
+        """probability mass function"""
+        PMF = (self.e**(-self.lambtha) * (self.lambtha ** k)) / factorial(k)
+        return PMF
