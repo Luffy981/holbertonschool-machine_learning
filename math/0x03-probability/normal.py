@@ -30,3 +30,10 @@ class Normal:
         """x-value of a given z-score"""
         x = (z * self.stddev) + self.mean
         return x
+
+    def pdf(self, x):
+        """Probability density function"""
+        factor = 1 / (self.stddev * (2 * self.pi) ** 1/2)
+        poew =  (-1/2 * ((x - self.mean) / self.stddev) ** 2) 
+        pdf = factor * self.e ** poew
+        return pdf
