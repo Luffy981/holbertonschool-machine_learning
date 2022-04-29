@@ -5,9 +5,9 @@
 class Normal:
     """Normal distribution"""
     def __init__(self, data=None, mean=0., stddev=1.):
-        self.mean = float(mean)
-        self.stddev = float(stddev)
         if data is None:
+            self.mean = float(mean)
+            self.stddev = float(stddev)
             if self.stddev <= 0:
                 raise ValueError("stddev must be a positive value")
         else:
@@ -19,7 +19,7 @@ class Normal:
             suma = 0
             for x in data:
                 suma += (x - self.mean) ** 2
-            self.stddev = ((1/len(data)) * suma) ** 1/2
+            self.stddev = (1 / (len(data) - 1) * suma) ** 0.5
 
     def z_score(self, x):
         """Z-score given x-value"""
