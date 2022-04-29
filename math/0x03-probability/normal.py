@@ -33,7 +33,7 @@ class Normal:
 
     def pdf(self, x):
         """Probability density function"""
-        factor = 1 / (self.stddev * (2 * self.pi) ** 1/2)
+        factor = 1 / (self.stddev * (2 * self.pi) ** 0.5)
         poew = (-1/2 * ((x - self.mean) / self.stddev) ** 2)
         pdf = factor * self.e ** poew
         return pdf
