@@ -35,5 +35,5 @@ class Exponential:
             x = int(x)
         except Exception:
             return 0
-        CDF = self.lambtha * self.e ** (-self.lambtha * x)
+        CDF = 1 - self.e ** (-self.lambtha * x)
         return CDF
