@@ -18,7 +18,7 @@ class Exponential:
             count = 0
             for x in data:
                 count += x
-            self.lambtha = float(count / len(data))
+            self.lambtha = 1 / float(count / len(data))
 
     def pdf(self, k):
         """probability mass function"""
