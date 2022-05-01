@@ -36,6 +36,8 @@ class Poisson:
             k = int(k)
         except Exception:
             return 0
+        if k < 0:
+            return 0
         PMF = (self.e**(-self.lambtha) * (self.lambtha ** k)) / factorial(k)
         return PMF
 
@@ -46,6 +48,8 @@ class Poisson:
         except Exception:
             return 0
         CDF = 0
+        if k < 0:
+            return 0
         for i in range(k + 1):
             factor = (self.e ** (-self.lambtha) * (self.lambtha ** i))
             CDF += factor / factorial(i)
