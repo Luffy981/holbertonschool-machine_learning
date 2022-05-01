@@ -22,10 +22,6 @@ class Exponential:
 
     def pdf(self, x):
         """probability density function"""
-        try:
-            x = int(x)
-        except Exception:
-            return 0
         if x < 0:
             return 0
         PDF = self.lambtha * self.e ** (-self.lambtha * x)
