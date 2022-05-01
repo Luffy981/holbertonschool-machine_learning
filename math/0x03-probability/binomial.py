@@ -41,11 +41,8 @@ class Binomial:
 
     def pmf(self, k):
         """Probability mass function"""
-        try:
-            if type(k) != int:
-                k = int(k)
-        except Exception:
-            return 0
+        if type(k) != int:
+            k = int(k)
         com = factorial(self.n) / (factorial(k) * factorial(self.n - k))
         PMF = com * (self.p ** k) * ((1 - self.p) ** (self.n - k))
         return PMF
