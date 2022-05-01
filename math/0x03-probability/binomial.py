@@ -30,3 +30,13 @@ class Binomial:
             p = 1 - (var / mean)
             self.n = round(mean / p)
             self.p = mean / self.n
+
+    def pmf(self, k):
+        """Probability mass function"""
+        try:
+            if type(k) != int:
+                k = int(k)
+        except Exception:
+            return 0
+        com = factorial(self.n) / (factorial(k) * factorial(self.n - k))
+        return com * (self.p ** k) * ((1 - self.p) ** (self.n - k))
