@@ -2,15 +2,15 @@
 """Normal class"""
 
 
-pi = 3.1415926536
-
-
 def factorial(number):
     """Method to calculate Factorial"""
     fact = 1
     for num in range(2, number + 1):
         fact = fact * num
     return fact
+
+
+pi = 3.1415926536
 
 
 def erf(t):
