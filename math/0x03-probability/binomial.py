@@ -2,6 +2,14 @@
 """Binomial class"""
 
 
+def factorial(number):
+    """Method to calculate Factorial"""
+    fact = 1
+    for num in range(2, number + 1):
+        fact = fact * num
+    return fact
+
+
 class Binomial:
     """Binomial distribution"""
     def __init__(self, data=None, n=1, p=0.5):
