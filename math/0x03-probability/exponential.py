@@ -29,9 +29,7 @@ class Exponential:
 
     def cdf(self, x):
         """Cumulative density function"""
-        try:
-            x = int(x)
-        except Exception:
+        if x < 0:
             return 0
         CDF = 1 - self.e ** (-self.lambtha * x)
         return CDF
