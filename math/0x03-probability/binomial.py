@@ -46,6 +46,23 @@ class Binomial:
                 k = int(k)
         except Exception:
             return 0
+        if k < 0:
+            return 0
         com = factorial(self.n) / (factorial(k) * factorial(self.n - k))
         PMF = com * (self.p ** k) * ((1 - self.p) ** (self.n - k))
         return PMF
+
+    def cdf(self, k):
+        """Probability density function"""
+        try:
+            if type(k) != int:
+                k = int(k)
+        except Exception:
+            return 0
+        if k < 0:
+            return 0
+        CDF = 0
+        for i in range(k + 1):
+            com = factorial(self.n) / (factorial(k) * factorial(self.n - k))
+            CDF += com * (self.p ** k) * ((1 - self.p) ** (self.n - k))
+        return CDF
