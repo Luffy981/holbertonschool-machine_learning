@@ -63,6 +63,6 @@ class Binomial:
             return 0
         CDF = 0
         for i in range(k + 1):
-            com = factorial(self.n) / (factorial(k) * factorial(self.n - k))
-            CDF += com * (self.p ** k) * ((1 - self.p) ** (self.n - k))
+            com = factorial(self.n) / (factorial(i) * factorial(self.n - i))
+            CDF += com * (self.p ** i) * ((1 - self.p) ** (self.n - i))
         return CDF
