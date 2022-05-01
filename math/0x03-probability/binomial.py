@@ -2,14 +2,6 @@
 """Binomial class"""
 
 
-def factorial(number):
-    """Method to calculate Factorial"""
-    fact = 1
-    for num in range(2, number + 1):
-        fact = fact * num
-    return fact
-
-
 class Binomial:
     """Binomial distribution"""
     def __init__(self, data=None, n=1, p=0.5):
@@ -41,8 +33,11 @@ class Binomial:
 
     def pmf(self, k):
         """Probability mass function"""
-        if type(k) != int:
-            k = int(k)
+        try:
+            if type(k) != int:
+                k = int(k)
+        except Exception:
+            return 0
         com = factorial(self.n) / (factorial(k) * factorial(self.n - k))
         PMF = com * (self.p ** k) * ((1 - self.p) ** (self.n - k))
         return PMF
