@@ -20,13 +20,15 @@ class Exponential:
                 count += x
             self.lambtha = 1 / float(count / len(data))
 
-    def pdf(self, k):
-        """probability mass function"""
+    def pdf(self, x):
+        """probability density function"""
         try:
-            k = int(k)
+            x = int(x)
         except Exception:
             return 0
-        PDF = self.lambtha * self.e ** (-self.lambtha * k)
+        if x < 0:
+            return 0
+        PDF = self.lambtha * self.e ** (-self.lambtha * x)
         return PDF
 
     def cdf(self, x):
