@@ -82,12 +82,15 @@ class Neuron:
         Partial derivates of COST FUNCTION respect to Weigth and bias
         1 step
         """
-        m = (Y.shape[1])
+        m = len(Y[0])
+        # Calculating the gradients
+        # Derivate forward propagation
         dz = A - Y
-        db = (1/m) * np.sum(dz)
-        dw = (1/m) * np.matmul(X, dz.T)
-        self.__W = self.__W - alpha * dw.T
-        self.__b = self.__b - alpha * db
+        weight_derivative = np.matmul(X, dz.T) / m
+        bias_derivative = np.sum(dz) / m
+        # Updating weigths and bias
+        self.__b = self.__b - (alpha * bias_derivative)
+        self.__W = self.__W - (alpha * weight_derivative.T)
 
 
 def sigmoid(z):
