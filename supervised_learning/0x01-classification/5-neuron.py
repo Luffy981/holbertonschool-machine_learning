@@ -93,7 +93,7 @@ class Neuron:
         # print("BIAS ", bias_derivative)
         # Updating weigths and bias
         self.__b = self.__b - (alpha * bias_derivative)
-        self.__W = self.__W - (alpha * weight_derivative)
+        self.__W = self.__W - (alpha * weight_derivative.T)
 
 
 def sigmoid(z):
