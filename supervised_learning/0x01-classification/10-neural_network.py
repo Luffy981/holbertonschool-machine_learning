@@ -64,7 +64,7 @@ class NeuralNetwork:
         """Forward propagation"""
         """Ponderate weights and data"""
         sump1 = np.dot(self.__W1, X) + self.__b1
-        sump2 = np.dot(self.__2, X) + self.__b2
+        sump2 = np.dot(self.__W2, X) + self.__b2
         """using activation function"""
         A1 = sigmoid(sump1)
         A2 = sigmoid(sump2)
