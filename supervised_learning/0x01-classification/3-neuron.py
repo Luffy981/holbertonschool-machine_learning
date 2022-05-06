@@ -60,7 +60,7 @@ class Neuron:
         # Calculate the number of observations
         # m : number of classes (dog, cat, fish)
         m = len(np.transpose(Y))
-        print(m)
+        # print(m)
         # Take the average cost
         cost_avg = -total_cost.sum() / m
         return cost_avg
