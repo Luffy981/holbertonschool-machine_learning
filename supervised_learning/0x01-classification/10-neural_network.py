@@ -72,3 +72,8 @@ class NeuralNetwork:
         self.__A1 = A1
         self.__A2 = A2
         return (self.__A1, self.__A2)
+
+
+def sigmoid(number):
+    """Sigmoid function"""
+    return 1 /(1 + np.exp(-number))
