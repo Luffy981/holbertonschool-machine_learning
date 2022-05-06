@@ -84,12 +84,12 @@ class Neuron:
         """
         m = len(Y[0])
         # print(m)
-        # derivate of Z
+        # derivate of forward propagation
         dz = A - Y
         # Calculatin the gradients
         weight_derivative = np.matmult(X, dz.T) / m
         # print("WEIGHT ", weight_derivative.shape)
-        bias_derivative = np.sum(A - Y) / m
+        bias_derivative = np.sum(dz) / m
         # print("BIAS ", bias_derivative)
         # Updating weigths and bias
         self.__b = self.__b - (alpha * bias_derivative)
