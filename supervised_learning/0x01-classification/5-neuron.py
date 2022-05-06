@@ -83,17 +83,11 @@ class Neuron:
         1 step
         """
         m = (Y.shape[1])
-        # print(m)
-        # derivate of forward propagation
         dz = A - Y
-        # Calculatin the gradients
-        weight_derivative = np.matmult(X, dz.T) / m
-        # print("WEIGHT ", weight_derivative.shape)
-        bias_derivative = np.sum(dz) / m
-        # print("BIAS ", bias_derivative)
-        # Updating weigths and bias
-        self.__b = self.__b - (alpha * bias_derivative)
-        self.__W = self.__W - (alpha * weight_derivative.T)
+        db = (1/m) * np.sum(dz)
+        dw = (1/m) * np.matmul(X, dz.T)
+        self.__W = self.__W - alpha * dw.T
+        self.__b = self.__b - alpha * db
 
 
 def sigmoid(z):
