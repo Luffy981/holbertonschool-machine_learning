@@ -17,9 +17,15 @@ class NeuralNetwork:
             raise TypeError("nodes must be an integer")
         if nodes < 1:
             raise ValueError("nodes must be a positive integer")
+        # The weights vector for the hidden layer
         self.W1 = np.random.normal(size=(nodes, nx))
-        self.b1 = 0
+        # The bias for the hidden layer
+        self.b1 = np.zeros(nodes).reshape(nodes, 1)
+        # The activated output for the hidden layer
         self.A1 = 0
+        # The weights vector for the output neuron
         self.W2 = np.random.normal(size=(1, nodes))
+        # The bias for the output neuron
         self.b2 = 0
+        # The activated output for the output neuron (prediction)
         self.A2 = 0
