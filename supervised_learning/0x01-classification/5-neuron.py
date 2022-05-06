@@ -83,12 +83,12 @@ class Neuron:
         1 step
         """
         m = len(Y[0])
-        print(m)
+        # print(m)
         # Calculatin the gradients
         weight_derivative = (X * (A-Y)).T / m
-        print("WEIGHT ", weight_derivative.shape)
+        # print("WEIGHT ", weight_derivative.shape)
         bias_derivative = np.sum(A - Y) / m
-        print("BIAS ", bias_derivative)
+        # print("BIAS ", bias_derivative)
         # Updating weigths and bias
         self.__b = self.__b - (alpha * bias_derivative)
         self.__W = self.__W - (alpha * weight_derivative)
