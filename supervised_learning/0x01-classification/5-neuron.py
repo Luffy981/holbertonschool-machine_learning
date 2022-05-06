@@ -82,7 +82,7 @@ class Neuron:
         Partial derivates of COST FUNCTION respect to Weigth and bias
         1 step
         """
-        m = len(Y[0])
+        m = (Y.shape[1])
         # print(m)
         # derivate of forward propagation
         dz = A - Y
