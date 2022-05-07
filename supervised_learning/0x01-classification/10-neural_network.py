@@ -63,9 +63,9 @@ class NeuralNetwork:
     def forward_prop(self, X):
         """Forward propagation"""
         """Ponderate weights and data"""
-        sump1 = np.matmul(self.__W1, X) + self.__b1
+        sump1 = np.dot(self.__W1, X) + self.__b1
         self.__A1 = sigmoid(sump1)
-        sump2 = np.matmul(self.__W2, self.__A1) + self.__b2
+        sump2 = np.dot(self.__W2, self.__A1) + self.__b2
         """using activation function"""
         A2 = sigmoid(sump2)
         """Updating predictions for hidden layer and output layer"""
