@@ -18,7 +18,7 @@ class DeepNeuralNetwork:
 
         """Layers must be a list of positive integers"""
         """ Using filter to check if any element is negative """
-        negative = list(filter(lambda x: x < 0, layers))
+        negative = list(filter(lambda x: x <= 0, layers))
         if len(negative) > 0:
             raise TypeError("layers must be a list of positive integers")
         """The number of layers in neural network"""
