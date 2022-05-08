@@ -16,7 +16,7 @@ class DeepNeuralNetwork:
         if type(layers) != list:
             raise TypeError("layers must be a list of positive integers")
         for element in layers:
-            if element <= 0:
+            if element < 0:
                 raise TypeError("layers must be a list of positive integers")
         """The number of layers in neural network"""
         self.L = len(layers)
