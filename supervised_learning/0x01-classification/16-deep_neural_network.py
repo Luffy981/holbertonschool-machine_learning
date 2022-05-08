@@ -29,12 +29,13 @@ class DeepNeuralNetwork:
         for i in range(len(layers)):
             """biases of the network should be initialized to 0’s"""
             if i == 0:
-                norm = np.random.randn(layers[i], nx) / np.sqrt(layers[i] / 2)
-                self.weights['W' + str(i + 1)] = norm
+                factor1 = np.random.randn(layers[i], nx)
+                factor2 = np.sqrt(2 / layers[i])
+                self.weights['W' + str(i + 1)] = factor1 * factor2
             else:
                 """He et a"""
-                factor = layers[i - 1]) / np.sqrt(layers[i] / 2
-                nor = np.random.randn(layers[i], factor)
-                self.weights['W' + str(i + 1)] = nomr
-            col = np.zeros(layers[i]).reshape(layers[i], 1)
-            self.weights['b' + str(i + 1)] = col
+                factor1 = np.random.randn(layers[i], layers[i - 1])
+                factor2 = np.sqrt(2 / layers[i])
+                self.weights['W' + str(i + 1)] = factor1 * factor2
+            zeros = np.zeros(layers[i])
+            self.weights['b' + str(i + 1)] = zeros.reshape(layers[i], 1)
