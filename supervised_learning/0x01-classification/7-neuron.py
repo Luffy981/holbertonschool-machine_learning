@@ -2,6 +2,7 @@
 """Only just one neuron"""
 
 
+import matplotlib.pyplot as plt
 import numpy as np
 
 
@@ -111,7 +112,7 @@ class Neuron:
         # Lists to plot graph
         costs = []
         iterat = []
-        for i in range(iterations):
+        for i in range(iterations + 1):
             # calculate prediction
             self.__A = self.forward_prop(X)
             # Using gradient to minimize error
@@ -122,14 +123,8 @@ class Neuron:
                 costs.append(current_cost)
                 iterat.append(i)
                 print("Cost after {} iterations: {}".format(i, current_cost))
-        if verbose is True and i % step == 0:
-            # Calculate current cost
-            current_cost = self.cost(Y, self.__A)
-            costs.append(current_cost)
-            iterat.append(iterations)
-            print("Cost after {} iterations: {}".format(i, current_cost))
         if graph is True:
-            plt.plot(iterations, costs)
+            plt.plot(iterat, costs)
             plt.xlabel("iteration")
             plt.ylabel("cost")
             plt.title("Training Cost")
