@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""DEEP NEURAL NETWORK"""
+"""deep neural network"""
 
 
 import numpy as np
@@ -15,9 +15,12 @@ class DeepNeuralNetwork:
             raise ValueError("nx must be a positive integer")
         if type(layers) != list:
             raise TypeError("layers must be a list of positive integers")
-        for element in layers:
-            if element < 0:
-                raise TypeError("layers must be a list of positive integers")
+
+        """Layers must be a list of positive integers"""
+        """ Using filter to check if any element is negative """
+        negative = list(filter(lambda x: x < 0, layers))
+        if len(negative > 0):
+            raise TypeError("layers must be a list of positive integers")
         """The number of layers in neural network"""
         self.L = len(layers)
         """A dictionary to hold all weigths and biased of the network"""
