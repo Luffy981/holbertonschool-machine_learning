@@ -30,12 +30,12 @@ class DeepNeuralNetwork:
             """biases of the network should be initialized to 0’s"""
             if i == 0:
                 factor1 = np.random.randn(layers[i], nx)
-                factor2 = np.sqrt(2 / layers[i])
+                factor2 = np.sqrt(2 / nx)
                 self.weights['W' + str(i + 1)] = factor1 * factor2
             else:
                 """He et a"""
                 factor1 = np.random.randn(layers[i], layers[i - 1])
-                factor2 = np.sqrt(2 / layers[i])
+                factor2 = np.sqrt(2 / layers[i - 1])
                 self.weights['W' + str(i + 1)] = factor1 * factor2
             zeros = np.zeros(layers[i])
             self.weights['b' + str(i + 1)] = zeros.reshape(layers[i], 1)
