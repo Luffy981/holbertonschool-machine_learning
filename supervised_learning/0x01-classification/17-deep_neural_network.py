@@ -19,9 +19,7 @@ class DeepNeuralNetwork:
         negative = list(filter(lambda x: x <= 0, layers))
         if len(negative) > 0:
             raise TypeError("layers must be a list of positive integers")
-        """The number of layers in neural network"""
         self.__L = len(layers)
-        """A dictionary to hold all weigths and biased of the network"""
         self.__cache = {}
         self.__weights = {}
         for i in range(len(layers)):
@@ -38,17 +36,17 @@ class DeepNeuralNetwork:
             zeros = np.zeros(layers[i])
             self.__weights['b' + str(i + 1)] = zeros.reshape(layers[i], 1)
 
-        @property
-        def L(self):
-            """The number of layers in the neural network."""
-            return self.__L
+    @property
+    def cache(self):
+        """ A dictionary to hold all intermediary values of the network"""
+        return self.__cache
 
-        @property
-        def cache(self):
-            """ A dictionary to hold all intermediary values of the network."""
-            return self.__cache
+    @property
+    def L(self):
+        """The number of layers in the neural network"""
+        return self.__L
 
-        @property
-        def weights(self):
-            """ A dictionary to hold all weights and biased of the network."""
-            return self.__weights
+    @property
+    def weights(self):
+        """ A dictionary to hold all weights and biased of the network"""
+        return self.__weights
