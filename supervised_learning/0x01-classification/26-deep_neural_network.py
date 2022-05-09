@@ -184,7 +184,7 @@ class DeepNeuralNetwork:
         if type(filename) != str:
             return None
         if filename.split('.')[-1] != 'pkl':
-            return None
+            filename = filename + '.pkl'
         try:
             with open(filename, 'wb') as f:
                 obj = pickle.dump(self, f)
