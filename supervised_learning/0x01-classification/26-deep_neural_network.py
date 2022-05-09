@@ -192,6 +192,18 @@ class DeepNeuralNetwork:
         except Exception:
             return None
 
+    @staticmethod
+    def load(filename):
+        """
+        Loads a pickled deep neural object
+        """
+        try:
+            with open(filename, 'rb) as f:
+                obj = pickle.load(f)
+                return obj
+        except Exception:
+            return None
+
 
 def sigmoid(x):
     """Sigmoid function"""
