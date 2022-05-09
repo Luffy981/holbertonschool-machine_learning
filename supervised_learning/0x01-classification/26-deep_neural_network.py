@@ -179,7 +179,7 @@ class DeepNeuralNetwork:
         result = self.evaluate(X, Y)
         return result
 
-        def save(self, filename):
+    def save(self, filename):
         """Saves the instance object to a file in pickle format"""
         if type(filename) != str:
             return None
