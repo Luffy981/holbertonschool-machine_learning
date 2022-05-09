@@ -60,7 +60,7 @@ class DeepNeuralNetwork:
             activation = sigmoid(np.dot(w_layer, X) + b_layer)
             X = activation
             self.__cache['A' + str(i + 1)] = activation
-        return X, self.__cache
+        return self.__cache['A{}'.format(self.__L)], self.__cache
 
 
 def sigmoid(x):
