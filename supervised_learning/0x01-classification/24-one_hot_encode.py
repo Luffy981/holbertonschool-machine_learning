@@ -12,6 +12,8 @@ def one_hot_encode(Y, classes):
     if type(classes) is not int:
         return None
     try:
+        # The eye tool returns a 2-D array with 1’s as the diagonal
+        # and 0’s elsewhere
         one_hot = np.eye(classes)[Y]
     except Exception:
         return None
