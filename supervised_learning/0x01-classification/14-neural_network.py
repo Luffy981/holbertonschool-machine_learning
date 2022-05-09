@@ -142,8 +142,6 @@ class NeuralNetwork:
         if alpha <= 0:
             raise ValueError("alpha must be positive")
         for i in range(iterations):
-            self.__A = self.forward_prop(X)
-        for i in range(iterations):
             # calculate predictions
             self.__A1, self.__A2 = self.forward_prop(X)
             # Using gradient to minimize error
