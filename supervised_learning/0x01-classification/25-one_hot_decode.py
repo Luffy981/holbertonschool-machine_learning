@@ -7,7 +7,7 @@ import numpy as np
 
 def one_hot_decode(one_hot):
     """Devode One hot"""
-    if type(one_hot) is not np.ndarray:
+    if type(one_hot) is not np.ndarray or len(one_hot.shape) != 2:
         return None
     try:
         # returning Indices of the max element
