@@ -198,7 +198,7 @@ class DeepNeuralNetwork:
         Loads a pickled deep neural object
         """
         try:
-            with open(filename, 'rb) as f:
+            with open(filename, 'rb') as f:
                 obj = pickle.load(f)
                 return obj
         except Exception:
