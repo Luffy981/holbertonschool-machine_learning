@@ -63,11 +63,26 @@ class DeepNeuralNetwork:
         return self.__cache['A{}'.format(self.__L)], self.__cache
 
     def cost(self, Y, A):
-        """Cost or error function"""
-        label_1 = Y * log(A)
-        label_2 = (Y - 1) * log(1.0000001 - A)
-        cost = label_1 * label_2
-        return cost
+        """
+        Cost function CROSS ENTROPY
+        Cost=(labels*log(predictions)+(1-labels)*log(1-predictions))/len(labels)
+        Params:
+            Y: correct labels for the input data
+            A: activated output of the neuron for each(prediction)
+        """
+        """take the error when label = 1"""
+        cost1 = Y * np.log(A)
+        """take the error when label = 0"""
+        cost2 = (1 - Y) * np.log(1.0000001 - A)
+        """Take the sum of both costs"""
+        total_cost = cost1 + cost2
+        """Calculate the number of observations"""
+        """m : number of classes (dog, cat, fish)"""
+        m = len(np.transpose(Y))
+        """print(m)"""
+        """Take the average cost"""
+        cost_avg = -total_cost.sum() / m
+        return cost_avg
 
 
 def sigmoid(x):
