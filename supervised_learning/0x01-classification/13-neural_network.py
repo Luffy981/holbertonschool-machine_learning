@@ -115,15 +115,15 @@ class NeuralNetwork:
         # Derivate cost function
         dz2 = A2 - Y
         # Output layer
-        weight_derivative_2 = np.matmul(A1, dz2.T) / m
-        bias_derivative_2 = np.sum(dz2, keepdims=True) / m
+        weight_derivative_2 = np.dot(A1, dz2.T) / m
+        bias_derivative_2 = np.sum(dz2, axis=1, keepdims=True) / m
         # derivate sigmoid
         d_sigmoid = derivate_sigmoid(A1)
         # derivate cost function
         dz1 = np.dot(self.__W2.T, dz2) * d_sigmoid
         # hidden layer
-        weight_derivative_1 = np.matmul(X, dz1.T) / m
-        bias_derivative_1 = np.sum(dz1, keepdims=True) / m
+        weight_derivative_1 = np.dot(X, dz1.T) / m
+        bias_derivative_1 = np.sum(dz1, axis=1, keepdims=True) / m
         # Updating weigths and bias hidden layer
         self.__b1 = self.__b1 - (alpha * bias_derivative_1)
         self.__W1 = self.__W1 - (alpha * weight_derivative_1.T)
@@ -135,3 +135,8 @@ class NeuralNetwork:
 def sigmoid(number):
     """Sigmoid function"""
     return 1 / (1 + np.exp(-number))
+
+
+def derivate_sigmoid(z):
+    """Sigmoid derivate"""
+    return z * (1 - z)
