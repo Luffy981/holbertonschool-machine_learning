@@ -96,9 +96,9 @@ class NeuralNetwork:
 
     def evaluate(self, X, Y):
         """Evaluate neuron
-        return: Prediction, Cost        
+        return: Prediction, Cost
         """
-        prediction_1, prediction2 =  self.forward_prop(X)
+        prediction_1, prediction2 = self.forward_prop(X)
         cost = self.cost(Y, prediction2)
         # np.rint: Round elements of the array to the nearest integer.
         prediction2 = np.rint(prediction2).astype(int)
