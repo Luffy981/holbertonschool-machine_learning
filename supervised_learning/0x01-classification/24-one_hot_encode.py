@@ -15,6 +15,6 @@ def one_hot_encode(Y, classes):
         # The eye tool returns a 2-D array with 1’s as the diagonal
         # and 0’s elsewhere
         one_hot = np.eye(classes)[Y]
-        return one_hot
+        return one_hot.T
     except Exception:
         return None
