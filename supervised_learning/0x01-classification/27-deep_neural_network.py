@@ -127,25 +127,6 @@ class DeepNeuralNetwork:
             self.__weights['b' + str(i)] = wl - restw
             self.__weights['W' + str(i)] = bl - restb
 
-    def train(self, X, Y, iterations=5000, alpha=0.05):
-        """Trains the neural network"""
-        if type(iterations) is not int:
-            raise TypeError("iterations must be an integer")
-        if iterations <= 0:
-            raise ValueError("iterations must be a positive integer")
-        if type(alpha) is not float:
-            raise TypeError("alpha must be a float")
-        if alpha <= 0:
-            raise ValueError("alpha must be positive")
-        for i in range(iterations):
-            # calculate predictions
-            AL, cache = self.forward_prop(X)
-            # Using gradient to minimize error
-            self.gradient_descent(Y, cache, alpha)
-        # Evaluate the training data
-        result = self.evaluate(X, Y)
-        return result
-
     def train(self, X, Y, iterations=5000, alpha=0.05,
               verbose=True, graph=True, step=100):
         """Trains the neural network"""
