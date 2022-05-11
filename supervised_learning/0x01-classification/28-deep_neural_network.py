@@ -118,13 +118,21 @@ class DeepNeuralNetwork:
         m = len(Y[0])
         for i in range(self.__L, 0, -1):
             # Derivate cost function OUTPUT LAYER
-            if i == self.__L:
-                dzl = self.__cache['A' + str(i)] - Y
+            if self.__activation == 'sig':
+                # A - Y
+                if i == self.__L:
+                    dzl = self.__cache['A' + str(i)] - Y
+            if self.__activation == 'tanh':
+                # ((A - Y) / A) * (1 + A)
+                if i == self.__L:
+                    num = (self.__cache['A' + str(i)] - Y)
+                    deno = self.__cache['A' + str(i)]
+                    factor = num / deno
+                    dzl = factor * (1 + self.__cache['A' + str(i)])
             # gradient
             X = self.__cache['A' + str(i - 1)]
             weight_derivative_l = np.dot(X, dzl.T) / m
             bias_derivative_l = np.sum(dzl, axis=1, keepdims=True) / m
-            # derivate cost function
             if self.__activation == 'sig':
                 # derivate sigmoid
                 d_activation = derivate_sigmoid(self.__cache['A' + str(i - 1)])
