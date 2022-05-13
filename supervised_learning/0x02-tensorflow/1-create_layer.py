@@ -4,27 +4,14 @@
 import tensorflow.compat.v1 as tf
 
 def create_layer(prev, n, activation):
-    """ function than can create a tensorflow layer
-    ...
-    Parameters
-    __________
-    prev : Tensor
-        Previous value of layer
-    n : int
-        The number of nodes in the layer to create
-    activation : function  
-        activation function
-    ...
-    Return
-    ______
-    layer:
-        output of the layer created in tensor
-    """
-    kernel_initializer = tf.keras.initializers.VarianceScaling(mode='fan_avg')
-    layer = tf.keras.layers.Dense(
-        units=n, 
-        activation=activation,
-        kernel_initializer=kernel_initializer,
-        name="layer"
-    )
-    return layer(prev)
+    """Create Layer"""
+    # He et al initialization
+    weights = tf.keras.initializers.VarianceScaling(mode='fan_avg')
+    # prev: tensor output of the previous layer
+    # n: is the number of nodes in the layer to create layer
+    # Initializer function for the weight matrix
+    layers = tf.keras.layers.Dense(activation=activation,
+                             units=n,
+                             kernel_initializer=weights,
+                             name='layer')
+    return layers(inputs=prev)
