@@ -9,6 +9,9 @@ def create_layer(prev, n, activation):
     """Create Layer"""
     # He et al initialization
     weights = tf.keras.initializers.VarianceScaling(mode='fan_avg')
+    # prev: tensor output of the previous layer
+    # n: is the number of nodes in the layer to create layer
+    # Initializer function for the weight matrix
     layers = tf.layers.dense(activation=activation,
                              inputs=prev,
                              units=n,
