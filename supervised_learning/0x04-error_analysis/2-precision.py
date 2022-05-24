@@ -2,6 +2,7 @@
 """
 Precision for confusion matrix
 """
+import numpy as np
 
 
 def precision(confusion):
