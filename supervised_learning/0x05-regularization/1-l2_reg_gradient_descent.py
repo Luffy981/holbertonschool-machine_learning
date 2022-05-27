@@ -33,7 +33,7 @@ def l2_reg_gradient_descent(Y, weights, cache, alpha, lambtha, L):
         else:
             factor = np.dot(cweights['W'+str(i+1)].T, prev_layer_err)
             # Current layer error
-            curr_layer_err = factor * derv_tanh(cache['A' + str(i)])
+            curr_layer_err = factor * (1 - cache['A' + str(i)])
             # derivate cost respect
             derv_cost_w = np.dot(curr_layer_err, cache['A' + str(i-1)].T) / m
             # Regularization with L2
@@ -44,10 +44,3 @@ def l2_reg_gradient_descent(Y, weights, cache, alpha, lambtha, L):
         cweights['b'+str(i)] = cweights['b'+str(i)] - alpha * derv_cost_b
         # Update layer error
         prev_layer_err = curr_layer_err
-
-
-def derv_tanh(A):
-    """
-    Derivate of tanH
-    """
-    return 1 - A**2
