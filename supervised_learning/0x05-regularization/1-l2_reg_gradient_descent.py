@@ -40,8 +40,8 @@ def l2_reg_gradient_descent(Y, weights, cache, alpha, lambtha, L):
             dw_L2 = derv_cost_w + (lambtha / m) * cweights['W'+str(i)]
             derv_cost_b = np.sum(curr_layer_err, axis=1, keepdims=True) / m
         # Update weights and bias
-        cweights['W'+str(i)] = cweights['W'+str(i)] - alpha * dw_L2
-        cweights['b'+str(i)] = cweights['b'+str(i)] - alpha * derv_cost_b
+        weights['W'+str(i)] = cweights['W'+str(i)] - alpha * dw_L2
+        weights['b'+str(i)] = cweights['b'+str(i)] - alpha * derv_cost_b
         # Update layer error
         prev_layer_err = curr_layer_err
 
