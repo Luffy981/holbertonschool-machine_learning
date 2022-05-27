@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Gradient Descent with L2 Regularization in DNN
+Gradient Descent with L2 Regularization in DNN.
 """
 import numpy as np
 
