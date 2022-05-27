@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-import numpy as np
 """L2 regularization in Deep Neural Network"""
+import numpy as np
 
 
 def l2_reg_cost(cost, lambtha, weights, L, m):
