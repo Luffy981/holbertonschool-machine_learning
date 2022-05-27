@@ -25,7 +25,7 @@ def dropout_forward_prop(X, weights, L, keep_prob):
         z = np.dot(weights['W'+str(i+1)], inputs) + weights['b'+str(i+1)]
         if i == L - 1:
             # activation function softmax
-            cache['A' + str(i)] = softmax(z)
+            cache['A' + str(i+1)] = softmax(z)
         else:
             # Dropout mask
             cache['D' + str(i+1)] = np.random.binomial(n=1,
