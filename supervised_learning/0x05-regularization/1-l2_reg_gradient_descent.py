@@ -29,7 +29,7 @@ def l2_reg_gradient_descent(Y, weights, cache, alpha, lambtha, L):
             derv_cost_w = np.dot(cache['A' + str(i-1)], curr_layer_err.T).T / m
             # Regularization wih L2
             dw_L2 = derv_cost_w + (lambtha / m) * cweights['W'+str(i)]
-            derv_cost_b = np.sum(curr_layer_err, axis=1, keepdims=True)
+            derv_cost_b = np.sum(curr_layer_err, axis=1, keepdims=True) / m
         else:
             factor = np.dot(cweights['W'+str(i+1)].T, prev_layer_err)
             # Current layer error
@@ -38,7 +38,7 @@ def l2_reg_gradient_descent(Y, weights, cache, alpha, lambtha, L):
             derv_cost_w = np.dot(curr_layer_err, cache['A' + str(i-1)].T) / m
             # Regularization with L2
             dw_L2 = derv_cost_w + (lambtha / m) * cweights['W'+str(i)]
-            derv_cost_b = np.sum(curr_layer_err, axis=1, keepdims=True)
+            derv_cost_b = np.sum(curr_layer_err, axis=1, keepdims=True) / m
         # Update weights and bias
         cweights['W'+str(i)] = cweights['W'+str(i)] - alpha * dw_L2
         cweights['b'+str(i)] = cweights['b'+str(i)] - alpha * derv_cost_b
