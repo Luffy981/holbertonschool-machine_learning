@@ -1,50 +1,45 @@
 #!/usr/bin/env python3
-"""
-Gradient Descent with Dropout
-"""
+"""Forward Propagation with Dropout"""
 import numpy as np
 
 
-def dropout_gradient_descent(Y, weights, cache, alpha, keep_prob, L):
+def dropout_forward_prop(X, weights, L, keep_prob):
     """
-    Dropout regularization using gradient descent
     Args:
-        Y: (classes, m) that contains the correct labels for the data
-            classes: is the number of classes
+        X is a numpy.ndarray of shape (nx, m) containing the input data
+            nx: is the number of input features
             m: is the number of data points
-        weights: is a dictionary of the weights and biases of the DNN
-        cache: is a dictionary of the outputs and dropout masks of each
-                layer of the neural network
-        alpha: is the learning rate
+        weights: is a dictionary of the weights and biases of the NN
+        L: the number of layers in the network
         keep_prob: is the probability that a node will be kept
-        L: is the number of layers of the network
+    Return:
+        dictionary containing the outputs of each layer
+        and the dropout mask used on each layer
     """
-    m = Y.shape[1]
-    cweights = weights.copy()
-    print(cache)
-    for i in range(L, 0, -1):
-        if i == L:
-            # Current layer error, derivate cost respect to Z
-            curr_layer_err = cache['A'+str(i)] - Y
+    # dictionary for activations and masks dropout
+    cache = {}
+    cache['A0'] = X
+    for i in range(L):
+        inputs = cache['A'+str(i)]
+        # Ponderate sum
+        z = np.dot(weights['W'+str(i+1)], inputs) + weights['b'+str(i+1)]
+        if i == L - 1:
+            # activation function softmax
+            cache['A' + str(i)] = softmax(z)
         else:
-            factor = np.dot(cweights['W'+str(i+1)].T, prev_layer_err)
-            # Current layer error
-            curr_layer_err = factor * derv_tanh(cache['A' + str(i)])
-            # aplying mask to current layer error
-            curr_layer_err *= cache['D'+str(i)] / keep_prob
-        # derivate cost respect to weight
-        derv_cost_w = np.dot(curr_layer_err, cache['A' + str(i-1)].T) / m
-        # derivate cost respect to bias
-        derv_cost_b = np.sum(curr_layer_err, axis=1, keepdims=True) / m
-        # Update weights and bias
-        weights['W'+str(i)] = cweights['W'+str(i)] - alpha * derv_cost_w
-        weights['b'+str(i)] = cweights['b'+str(i)] - alpha * derv_cost_b
-        # Update layer error
-        prev_layer_err = curr_layer_err
+            # Dropout mask
+            cache['D' + str(i+1)] = np.random.binomial(n=1,
+                                                       p=keep_prob,
+                                                       size=z.shape)
+            # activation function tanh
+            factor = np.tanh(z) * cache['D' + str(i+1)]
+            cache['A' + str(i+1)] = factor / keep_prob
+    # dictionary with activations and masks dropout
+    return cache
 
 
-def derv_tanh(A):
+def softmax(z):
     """
-    Derivate of tanH
+    softmax activation
     """
-    return 1 - (A**2)
+    return np.exp(z) / np.sum(np.exp(z), axis=0, keepdims=True)
