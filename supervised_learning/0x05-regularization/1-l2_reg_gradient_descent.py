@@ -26,7 +26,7 @@ def l2_reg_gradient_descent(Y, weights, cache, alpha, lambtha, L):
             # Current layer error, derivate cost respect to Z
             curr_layer_err = cache['A'+str(i)] - Y
             # derivate cost respect to weight last layer
-            derv_cost_w = np.dot(cache['A' + str(i-1)], curr_layer_err.T).T / m
+            derv_cost_w = np.dot(curr_layer_err, cache['A' + str(i-1)].T) / m
             # Regularization wih L2
             dw_L2 = derv_cost_w + (lambtha / m) * cweights['W'+str(i)]
             derv_cost_b = np.sum(curr_layer_err, axis=1, keepdims=True) / m
@@ -50,4 +50,4 @@ def derv_tanh(A):
     """
     Derivate of tanH
     """
-    return 1 - A**2
+    return 1 - (A**2)
