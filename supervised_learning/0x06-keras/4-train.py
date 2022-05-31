@@ -2,6 +2,7 @@
 """
 Train deep neural network with  Keras
 """
+import tensorflow.keras as K
 
 
 def train_model(network, data, labels, batch_size,
