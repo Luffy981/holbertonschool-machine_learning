@@ -29,5 +29,5 @@ def build_model(nx, layers, activations, lambtha, keep_prob):
                                   kernel_regularizer=regularizer)(pred)
         if i < len(layers) - 1:
             pred = K.layers.Dropout(rate=(1 - keep_prob))(pred)
-            model = K.Model(inputs=inputs, outputs=prediction)
+    model = K.Model(inputs=inputs, outputs=prediction)
     return model
