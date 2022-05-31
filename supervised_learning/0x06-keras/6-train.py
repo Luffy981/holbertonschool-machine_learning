@@ -42,4 +42,4 @@ def train_model(network, data, labels, batch_size,
                        verbose=verbose,
                        shuffle=shuffle,
                        validation_data=validation_data,
-                       callbacks=early)
+                       callbacks=[early])
