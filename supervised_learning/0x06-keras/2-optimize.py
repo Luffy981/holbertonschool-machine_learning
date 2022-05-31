@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """sets up Adam optimization for a keras model"""
-import tensOrfkeras as K
+import tensorflow.keras as K
 
 
 def optimize_model(network, alpha, beta1, beta2):
