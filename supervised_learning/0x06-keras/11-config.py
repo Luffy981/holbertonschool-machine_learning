@@ -13,6 +13,7 @@ def save_config(network, filename):
     model = network.to_json()
     with open(filename, 'w') as f:
         f.write(model)
+    return None
 
 
 def load_config(filename):
