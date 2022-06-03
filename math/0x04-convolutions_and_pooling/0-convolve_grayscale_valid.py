@@ -28,7 +28,7 @@ def convolve_grayscale_valid(images, kernel):
     for i in range(W_out):
         for j in range(H_out):
             # np.tensordot(a2D,a3D,((-1,),(-1,))).transpose(1,0,2)
-            part_image = images[:, j:j + kh, i:i + kw].T
+            part_image = images[:, j:j + kh, i:i + kw]
             output_matriz[:, j, i] = np.tensordot(part_image,
                                                   kernel,
                                                   axes=2)
