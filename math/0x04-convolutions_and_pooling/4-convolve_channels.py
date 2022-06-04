@@ -36,10 +36,10 @@ def convolve_channels(images, kernel, padding='same', stride=(1, 1)):
         p_h, p_w = padding
         W_out = (w - kw + (2 * p_w)) // sw + 1
         H_out = (h - kh + (2 * p_h)) // sh + 1
-        p_images = np.pad(images, ((0, 0),
-                                   (p_h, p_h),
-                                   (p_w, p_w),
-                                   (0, 0)),
+        p_images = np.pad(images, ((0,),
+                                   (p_h,),
+                                   (p_w,),
+                                   (0,)),
                           'constant')
         output_matriz = np.zeros((m, H_out, W_out))
     for h in range(H_out):
