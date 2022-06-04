@@ -20,28 +20,31 @@ def convolve_channels(images, kernel, padding='same', stride=(1, 1)):
     m = images.shape[0]
     h = images.shape[1]
     w = images.shape[2]
+    c = images.shape[3]
     kh = kernel.shape[0]
     kw = kernel.shape[1]
+    kc = kernel.shape[2]
     sh, sw = stride
+    # Calculatin output shape
     if padding == 'same':
-        ph = ((((h - 1) * sh) + kh - h) // 2) + 1
-        pw = ((((w - 1) * sw) + kw - w) // 2) + 1
+        p_h = ((((h - 1) * sh) + kh - h) // 2) + 1
+        p_w = ((((w - 1) * sw) + kw - w) // 2) + 1
     elif padding == 'valid':
-        ph = 0
-        pw = 0
-    else:
-        ph, pw = padding
-    new_padded_images = np.pad(images, ((0, 0),
-                                        (ph, ph),
-                                        (pw, pw),
-                                        (0, 0)), 'constant')
-    o_h = ((h + (2 * ph) - kh) // sh) + 1
-    o_w = ((w + (2 * pw) - kw) // sw) + 1
-    output = np.zeros((m, o_h, o_w))
-    for x in range(o_w):
-        for y in range(o_h):
-            i = y * sh
-            j = x * sw
-            mat = new_padded_images[:, i:i+kh, j:j+kw, :]
-            output[:, y, x] = np.sum(np.multiply(mat, kernel), axis=(1, 2, 3))
-    return output
+        p_h = 0
+        p_w = 0
+    elif type(padding) == tuple:
+        p_h, p_w = padding
+        W_out = ((w - kw + (2 * p_w)) // sw) + 1
+        H_out = ((h - kh + (2 * p_h)) // sh) + 1
+        p_images = np.pad(images, ((0, 0),
+                                   (p_h, p_h),
+                                   (p_w, p_w),
+                                   (0, 0)),
+                          'constant')
+        output_matriz = np.zeros((m, H_out, W_out))
+    for h in range(H_out):
+        for w in range(W_out):
+            # np.tensordot(a2D,a3D,((-1,),(-1,))).transpose(1,0,2)
+            part_image = p_images[:, sh*h:sh*h + kh, sw*w:sw*w + kw]
+            output_matriz[:, h, w] = np.tensordot(part_image, kernel, axes=3)
+    return output_matriz
