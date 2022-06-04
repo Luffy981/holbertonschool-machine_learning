@@ -42,9 +42,9 @@ def convolve_channels(images, kernel, padding='same', stride=(1, 1)):
                                    (0, 0)),
                           'constant')
         output_matriz = np.zeros((m, H_out, W_out))
-    for h in range(H_out):
-        for w in range(W_out):
+    for w in range(W_out):
+        for h in range(H_out):
             # np.tensordot(a2D,a3D,((-1,),(-1,))).transpose(1,0,2)
-            part_image = p_images[:, sh*h:sh*h + kh, sw*w:sw*w + kw]
+            part_image = p_images[:, sh*h:sh*h + kh, sw*w:sw*w + kw, :]
             output_matriz[:, h, w] = np.tensordot(part_image, kernel, axes=3)
     return output_matriz
