@@ -21,8 +21,7 @@ def pool(images, kernel_shape, stride, mode='max'):
     h = images.shape[1]
     w = images.shape[2]
     c = images.shape[3]
-    kh = kernels.shape[0]
-    kw = kernels.shape[1]
+    kh, kw = kernel_shape
     sh, sw = stride
     if mode == "max":
         op = np.amax
