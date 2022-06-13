@@ -44,9 +44,9 @@ def lenet5(x, y):
     fc3 = tf.layers.Dense(units=10,
                           kernel_initializer=initializer,
                           activation='softmax')(fc2)
-    sotfmax_output = tf.nn.softmax(fc3)
+    softmax_output = tf.nn.softmax(fc3)
     loss = tf.losses.softmax_cross_entropy(y, fc3)
     train = tf.train.AdamOptimizer().minimize(loss)
-    correct = tf.equal(tf.argmax(y, 1), tf.argmax(prediction, 1))
+    correct = tf.equal(tf.argmax(y, 1), tf.argmax(fc3, 1))
     accuracy = tf.reduce_mean(tf.cast(correct, tf.float32))
-    return sotfmax_output, train, loss, accuracy
+    return softmax_output, train, loss, accuracy
