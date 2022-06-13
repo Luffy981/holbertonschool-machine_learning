@@ -17,7 +17,7 @@ def lenet5(X):
         a tensor for the loss of the netowrk
         a tensor for the accuracy of the network
     """
-    initializer = K.initializer.HeNormal()
+    initializer = K.initializers.HeNormal()
     conv1 = K.layers.Conv2D(filters=6,
                             kernel_size=(5, 5),
                             padding='same',
