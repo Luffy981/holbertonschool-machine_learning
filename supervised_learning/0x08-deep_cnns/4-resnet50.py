@@ -20,44 +20,32 @@ def resnet50():
                             padding='same')(input_layer)
     batch1 = K.layers.BatchNormalization(axis=3)(conv1)
     activation1 = K.layers.Activation('relu')(batch1)
-    pool1 = K.layers.MaxPool2D(pool_size=(3, 3),
+    pool1 = K.layers.MaxPooling2D(pool_size=(3, 3),
                                strides=(2, 2),
                                padding='same')(activation1)
     # x3
     filters = (64, 64, 256)
     projection1 = projection_block(pool1, filters, s=1)
-    filters = (64, 64, 256)
     identity1 = identity_block(projection1, filters)
-    filters = (64, 64, 256)
     identity2 = identity_block(identity1, filters)
     # x4
     filters = (128, 128, 512)
     projection2 = projection_block(identity2, filters)
-    filters = (128, 128, 512)
-    identity3 = projection_block(projection2, filters)
-    filters = (128, 128, 512)
-    identity4 = projection_block(identity3, filters)
-    filters = (128, 128, 512)
-    identity5 = projection_block(identity4, filters)
+    identity3 = identity_block(projection2, filters)
+    identity4 = identity_block(identity3, filters)
+    identity5 = identity_block(identity4, filters)
     # x6
     filters = (256, 256, 1024)
     projection3 = projection_block(identity5, filters)
-    filters = (256, 256, 1024)
     identity6 = identity_block(projection3, filters)
-    filters = (256, 256, 1024)
     identity7 = identity_block(identity6, filters)
-    filters = (256, 256, 1024)
     identity8 = identity_block(identity7, filters)
-    filters = (256, 256, 1024)
     identity9 = identity_block(identity8, filters)
-    filters = (256, 256, 1024)
     identity10 = identity_block(identity9, filters)
     # x3
     filters = (512, 512, 2048)
     projection4 = projection_block(identity10, filters)
-    filters = (512, 512, 2048)
     identity11 = identity_block(projection4, filters)
-    filters = (512, 512, 2048)
     identity12 = identity_block(identity11, filters)
 
     pool2 = K.layers.AveragePooling2D(pool_size=(7, 7),
