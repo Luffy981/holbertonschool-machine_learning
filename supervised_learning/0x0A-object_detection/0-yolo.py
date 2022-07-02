@@ -7,6 +7,9 @@ import tensorflow.keras as K
 
 
 class Yolo:
+    """
+    YOLO V3
+    """
     def __init__(self, model_path, classes_path, class_t, nms_t, anchors):
         """
         Args:
