@@ -2,7 +2,6 @@
 """
 YOLO(You Only Look Once !!!)
 """
-import cv2
 import numpy as n
 import tensorflow.keras as K
 
@@ -37,6 +36,6 @@ class Yolo:
         # U'   universal newlines mode (deprecated)
         with open(classes_path, 'rt') as fd:
             self.class_names = fd.read().rstrip('\n').split('\n')
-            self.class_t = class_t
-            self.nms_t = nms_t
-            self.anchors = anchors
+        self.class_t = class_t
+        self.nms_t = nms_t
+        self.anchors = anchors
