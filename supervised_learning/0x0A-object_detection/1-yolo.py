@@ -85,8 +85,8 @@ class Yolo:
             box_confidence.append(self.sigmoid(output[..., 4:5]))
             class_probs.append(self.sigmoid(output[..., 5:]))
 
-        inputW = self.model.input.shape[1]
-        inputH = self.model.input.shape[2]
+        inputW = self.model.input.shape[1].value
+        inputH = self.model.input.shape[2].value
 
         # Predicted boundary box
         for x, box in enumerate(boxes):
