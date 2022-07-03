@@ -53,11 +53,24 @@ class Yolo:
 
     def process_outputs(self, outputs, image_size):
         """
-        Args:
+           Args:
+             outputs: numpy.ndarray - contains predictions from model
+               for single image.
+             image_size: numpy.ndarray - images original
+               size (image_height, image_width)
+           Return:
+              tuple - (boxes, box_confidence, box_class_probs)
+              boxes: numpy.ndarray - (grid_height, grid_width, anchorboxes, 4)
+                 4 => (x1, y1, x2, y2)
+              box_confidence: numpy.ndarray - shape
+                (grid_height, grid_width, anchor_boxes, 1)
+              box_class_probs: numpy.ndarray - shape
+                (grid_height, grid_width, anchor_boxes, classes)
+                contains class probabilities for each output
         """
         IH, IW = image_size[0], image_size[1]
         boxes = [output[..., :4] for output in outputs]
-        box_confidense, class_probs = [], []
+        box_confidence, class_probs = [], []
         cornersX, cornersY = [], []
 
         for output in outputs:
@@ -68,11 +81,14 @@ class Yolo:
             cy = np.arange(gridW).reshape(1, gridW)
             cy = np.repeat(cy, gridH, axis=0).T
 
-            cornersX.append(np.repeat(cx[..., np.newaxis], anchors, axis=2))
-            cornersY.append(np.repeat(cx[..., np.newaxis], anchors, axis=2))
-
-            # Box confidense and class probability  activations
-            box_confidense.append(self.sigmoid(output[..., 4:5]))
+            cornersX.append(
+                np.repeat(cx[..., np.newaxis], anchors, axis=2)
+                )
+            cornersY.append(
+                np.repeat(cy[..., np.newaxis], anchors, axis=2)
+                )
+            # box confidence and class probability activations
+            box_confidence.append(self.sigmoid(output[..., 4:5]))
             class_probs.append(self.sigmoid(output[..., 5:]))
 
         inputW = self.model.input.shape[1].value
@@ -80,10 +96,18 @@ class Yolo:
 
         # Predicted boundary box
         for x, box in enumerate(boxes):
-            bx = (self.sigmoid(box[..., 0])+cornersX)/outputs[x].shape[1]
-            by = (self.sigmoid(box[..., 1])+cornersY[x])/outputs[x].shape[0]
-            bw = (np.exp(box[..., 2])*self.anchors[x, :, 0])/inputW
-            bh = (np.exp(box[..., 3])*self.anchors[x, :, 1])/inputH
+            bx = (
+                (self.sigmoid(box[..., 0])+cornersX[x])/outputs[x].shape[1]
+                )
+            by = (
+                (self.sigmoid(box[..., 1])+cornersY[x])/outputs[x].shape[0]
+                )
+            bw = (
+                (np.exp(box[..., 2])*self.anchors[x, :, 0])/inputW
+                )
+            bh = (
+                (np.exp(box[..., 3])*self.anchors[x, :, 1])/inputH
+                )
 
             # x1
             box[..., 0] = (bx - (bw * 0.5))*IW
@@ -93,4 +117,5 @@ class Yolo:
             box[..., 2] = (bx + (bw * 0.5))*IW
             # y2
             box[..., 3] = (by + (bh * 0.5))*IH
-        return (boxes, box_confidense, class_probs)
+
+        return (boxes, box_confidence, class_probs)
