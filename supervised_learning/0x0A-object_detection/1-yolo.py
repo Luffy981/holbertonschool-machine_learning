@@ -79,12 +79,8 @@ class Yolo:
             cy = np.arange(gridW).reshape(1, gridW)
             cy = np.repeat(cy, gridH, axis=0).T
 
-            cornersX.append(
-                np.repeat(cx[..., np.newaxis], anchors, axis=2)
-                )
-            cornersY.append(
-                np.repeat(cy[..., np.newaxis], anchors, axis=2)
-                )
+            cornersX.append(np.repeat(cx[..., np.newaxis], anchors, axis=2))
+            cornersY.append(np.repeat(cy[..., np.newaxis], anchors, axis=2))
             # box confidence and class probability activations
             box_confidence.append(self.sigmoid(output[..., 4:5]))
             class_probs.append(self.sigmoid(output[..., 5:]))
@@ -94,18 +90,10 @@ class Yolo:
 
         # Predicted boundary box
         for x, box in enumerate(boxes):
-            bx = (
-                (self.sigmoid(box[..., 0])+cornersX[x])/outputs[x].shape[1]
-                )
-            by = (
-                (self.sigmoid(box[..., 1])+cornersY[x])/outputs[x].shape[0]
-                )
-            bw = (
-                (np.exp(box[..., 2])*self.anchors[x, :, 0])/inputW
-                )
-            bh = (
-                (np.exp(box[..., 3])*self.anchors[x, :, 1])/inputH
-                )
+            bx = ((self.sigmoid(box[..., 0])+cornersX[x])/outputs[x].shape[1])
+            by = ((self.sigmoid(box[..., 1])+cornersY[x])/outputs[x].shape[0])
+            bw = ((np.exp(box[..., 2])*self.anchors[x, :, 0])/inputW)
+            bh = ((np.exp(box[..., 3])*self.anchors[x, :, 1])/inputH)
 
             # x1
             box[..., 0] = (bx - (bw * 0.5))*IW
