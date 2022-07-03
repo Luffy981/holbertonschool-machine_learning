@@ -2,6 +2,7 @@
 """
 YOLO(You Only Look Once !!!)
 """
+from numpy.core.defchararray import index
 from numpy.core.fromnumeric import searchsorted
 import tensorflow.keras as K
 import tensorflow.keras.backend as backend
