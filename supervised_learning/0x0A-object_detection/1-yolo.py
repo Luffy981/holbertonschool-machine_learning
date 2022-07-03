@@ -43,13 +43,11 @@ class Yolo:
         self.nms_t = nms_t
         self.anchors = anchors
 
-
     def sigmoid(self, number):
         """
         Sigmoid activation function
         """
         return 1 / (1 + np.exp(-number))
-
 
     def process_outputs(self, outputs, image_size):
         """
