@@ -241,8 +241,8 @@ class Yolo:
               the original height and width of the images
                 2 => (image_height, image_width)
         """
-        inputW = self.model.input.shape[1].value
-        inputH = self.model.input.shape[2].value
+        inputW = self.model.input.shape[1]
+        inputH = self.model.input.shape[2]
         pimages, image_sizes = None, None
         channels = None
         dims = (inputH, inputW)
