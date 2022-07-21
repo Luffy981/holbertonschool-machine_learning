@@ -28,9 +28,9 @@ def determinant(matrix):
     """
     if matrix and matrix == [[]]:
         return 1
-    any(isinstance(el, list) for el in matrix)
-    if type(matrix) is not list:
-        raise TypeError("matrix must be a list of lists")
+    for item in matrix:
+        if type(item) is not list:
+            raise TypeError("matrix must be a list of lists")
     for vec in matrix:
         if len(vec) != len(matrix):
             raise ValueError("matrix must be a square matrix")
