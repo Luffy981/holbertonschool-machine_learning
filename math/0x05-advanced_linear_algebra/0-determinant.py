@@ -35,7 +35,7 @@ def determinant(matrix):
         if len(vec) != len(matrix):
             raise ValueError("matrix must be a square matrix")
     if len(matrix) == 1 and len(matrix[0]) == 1:
-        return matrix[0]
+        return matrix[0][0]
     elif len(matrix) == 2 and len(matrix[0]) == 2:
         return (matrix[0][0] * matrix[1][1]) - (matrix[0][1] * matrix[1][0])
     else:
