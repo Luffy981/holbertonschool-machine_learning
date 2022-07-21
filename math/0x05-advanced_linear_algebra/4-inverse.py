@@ -1,220 +1,148 @@
 #!/usr/bin/env python3
-"""Solution for solving determinants of NxN matrix"""
-
-
-def fourXfour(M):
-    """
-       Computes determinant of 4x4 matrix.
-
-       Args:
-         M: List of lists whose determinant should
-           be calculated.
-
-       Return:
-         Determinant of the matrix.
-    """
-    det = (M[0][0]*M[1][1])-(M[0][1]*M[1][0])
-    return det
-
-
-def M_ij(matrix, i, j):
-    """
-       Returns the matrix minus row [i] and column [j].
-
-       Args:
-         matrix: List of lists to adjust.
-         i: Row to remove.
-         j: Column to remove.
-
-       Return:
-         The input matrix minus row [i] and column [j].
-    """
-    matrix.pop(i)
-    for row in matrix:
-        row.pop(j)
-
-    return matrix
-
-
-def deep_cp(mat):
-    """Copies list of lists"""
-    return [x.copy() for x in mat]
-
-
-def recurse_determinant(matrix):
-    """
-       Finds the determinant of a NxN matrix.
-
-       Args:
-         matrix: List of lists whose determinant should
-           be calculated.
-
-       Return:
-         Determinant of the matrix.
-    """
-    if len(matrix) == 2:
-        return fourXfour(matrix)
-
-    det, flip = 0, 1
-
-    for x, num in enumerate(matrix[0]):
-        sub_matrix = M_ij(deep_cp(matrix), 0, x)
-        det += flip*num*recurse_determinant(sub_matrix)
-        flip = flip * -1
-
-    return det
+"""
+Function that calculates the inverse matrix of a matrix
+"""
 
 
 def determinant(matrix):
     """
-       Finds the determinant of a NxN matrix.
-
-       Args:
-         matrix: List of lists whose determinant should
-           be calculated using recurse_determinant().
-
-       Return:
-         Determinant of the matrix.
+    matrix is a list of lists whose determinant should be calculated
+    If matrix is not a list of lists, raise a TypeError with the
+    message matrix must be a list of lists
+    If matrix is not square, raise a ValueError with the message
+    matrix must be a square matrix
+    The list [[]] represents a 0x0 matrix
+    Returns: the determinant of matrix
     """
-    if type(matrix) is not list:
+    if type(matrix) is not list or len(matrix) is 0:
         raise TypeError("matrix must be a list of lists")
-
-    H = len(matrix)
-
-    if H == 0:
-        raise TypeError("matrix must be a list of lists")
-
-    for item in matrix:
-        if type(item) is not list:
+    if matrix == [[]]:
+        return 1
+    for row in matrix:
+        if type(row) is not list:
             raise TypeError("matrix must be a list of lists")
-        if len(item) != H and H != 1:
-            raise ValueError("matrix must be a non-empty square matrix")
-
-    if H == 1:
-        if len(matrix[0]) == 0:
-            raise 1
-        elif len(matrix[0]) == 1:
-            return matrix[0][0]
-        else:
-            raise ValueError("matrix must be a non-empty square matrix")
-    else:
-        return recurse_determinant(matrix)
-
-
-def minor(matrix):
-    """
-       Calculates minor matrix of a matrix.
-
-       Args:
-         matrix: The matrix to find the minors of.
-
-       Return:
-         The matrix of minors.
-    """
-
-    if type(matrix) is not list:
-        raise TypeError("matrix must be a list of lists")
-
-    H = len(matrix)
-
-    if H == 0:
-        raise TypeError("matrix must be a list of lists")
-
-    for item in matrix:
-        if type(item) is not list:
-            raise TypeError("matrix must be a list of lists")
-        if len(item) != H:
-            raise ValueError("matrix must be a non-empty square matrix")
-
-    if H == 1:
-        return [[1]]
-
-    m, minors = [], []
-
+        if len(row) is 0 and len(matrix) is 1:
+            return 1
+        if len(row) != len(matrix):
+            raise ValueError("matrix must be a square matrix")
+    if len(matrix) == 1:
+        return matrix[0][0]
+    if len(matrix) == 2:
+        return (matrix[0][0] *
+                matrix[1][1]) - (matrix[0][1] *
+                                 matrix[1][0])
+    cof = 1
+    d = 0
     for i in range(len(matrix)):
-        for j in range(len(matrix[0])):
-            m.append(
-                determinant(M_ij(deep_cp(matrix), i, j))
-            )
-
-        minors.append(m.copy())
-        m.clear()
-
-    return minors
+        element = matrix[0][i]
+        sub_matrix = []
+        for row in range(len(matrix)):
+            if row == 0:
+                continue
+            new_row = []
+            for column in range(len(matrix)):
+                if column == i:
+                    continue
+                new_row.append(matrix[row][column])
+            sub_matrix.append(new_row)
+        d += (element * cof * determinant(sub_matrix))
+        cof *= -1
+    return (d)
 
 
 def cofactor(matrix):
     """
-       Calculates The cofactor of a matrix.
-
-       Args:
-         matrix: Matrix to get cofactor of.
-
-       Return:
-         Cofactor of a matrix.
+    matrix is a list of lists whose minor matrix should be calculated
+    If matrix is not a list of lists, raise a TypeError with the message
+    matrix must be a list of lists
+    If matrix is not square or is empty, raise a ValueError with the
+    message matrix must be a non-empty square matrix
+    Returns: the minor matrix of matrix
     """
-
-    minors = minor(matrix)
-
-    for i in range(len(minors)):
-        for j in range(len(minors[i])):
-            minors[i][j] = minors[i][j] * pow(-1, i+j)
-
-    return minors
-
-
-def transpose(matrix):
-    """
-       Gets the transpose of a matrix.
-
-       Args:
-         matrix: Matrix to find the transpose of.
-
-       Return:
-         Transpose of the matrix.
-    """
-
-    T = [[] for i in range(len(matrix[0]))]
-
+    if type(matrix) is not list or len(matrix) is 0:
+        raise TypeError("matrix must be a list of lists")
     for row in matrix:
-        for x, item in enumerate(row):
-            T[x].append(item)
-
-    return T
+        if type(row) is not list:
+            raise TypeError("matrix must be a list of lists")
+        if len(row) != len(matrix):
+            raise ValueError("matrix must be a non-empty square matrix")
+    if len(matrix) is 1:
+        return [[1]]
+    cof = 1
+    cof_mat = []
+    for i in range(len(matrix)):
+        cof_row = []
+        for column_i in range(len(matrix)):
+            new_matrix = []
+            for row in range(len(matrix)):
+                if row == i:
+                    continue
+                new_row = []
+                for column in range(len(matrix)):
+                    if column == column_i:
+                        continue
+                    new_row.append(matrix[row][column])
+                new_matrix.append(new_row)
+            cof_row.append(cof * determinant(new_matrix))
+            cof *= -1
+        cof_mat.append(cof_row)
+        if len(matrix) % 2 is 0:
+            cof *= -1
+    return cof_mat
 
 
 def adjugate(matrix):
     """
-       Calculates the adjugate of a matrix.
-
-       Args:
-         matrix: The matrix to find adjugate of.
-
-       Return:
-         Adjugate of the matrix.
+    matrix is a list of lists whose adjugate matrix should be calculated
+    If matrix is not a list of lists, raise a TypeError with the message
+    matrix must be a list of lists
+    If matrix is not square or is empty, raise a ValueError with the
+    message matrix must be a non-empty square matrix
+    Returns: the adjugate matrix of matrix
     """
-
-    return transpose(cofactor(matrix))
+    if type(matrix) is not list or len(matrix) is 0:
+        raise TypeError("matrix must be a list of lists")
+    for row in matrix:
+        if type(row) is not list:
+            raise TypeError("matrix must be a list of lists")
+        if len(row) != len(matrix):
+            raise ValueError("matrix must be a non-empty square matrix")
+    if len(matrix) is 1:
+        return [[1]]
+    adj = cofactor(matrix)
+    transp = []
+    for j in range(len(adj[0])):
+        mat = []
+        for i in range(len(adj)):
+            mat.append(adj[i][j])
+        transp.append(mat)
+    return transp
 
 
 def inverse(matrix):
     """
-       Calculates the inverse of a matrix.
-
-       Args:
-         matrix: The matrix to find the inverse of.
-
-       Return:
-         The inverse of the matrix.
+    matrix is a list of lists whose inverse should be calculated
+    If matrix is not a list of lists, raise a TypeError with the
+    message matrix must be a list of lists
+    If matrix is not square or is empty, raise a ValueError with
+    the message matrix must be a non-empty square matrix
+    Returns: the inverse of matrix, or None if matrix is singular
     """
+    if type(matrix) is not list or len(matrix) is 0:
+        raise TypeError("matrix must be a list of lists")
+    for row in matrix:
+        if type(row) is not list:
+            raise TypeError("matrix must be a list of lists")
+        if len(row) != len(matrix):
+            raise ValueError("matrix must be a non-empty square matrix")
+    adj = adjugate(matrix)
     det = determinant(matrix)
     if det == 0:
         return None
-    Inv = []
-    adj = adjugate(matrix)
-
+    inv = []
     for i in range(len(matrix)):
-        r = [1/det*adj[i][j] for j in range(len(matrix[i]))]
-        Inv.append(r.copy())
-
-    return Inv
+        mat = []
+        for j in range(len(matrix[0])):
+            mat.append(adj[i][j] / det)
+        inv.append(mat)
+    return inv1
