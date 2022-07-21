@@ -44,7 +44,7 @@ def determinant(matrix):
             copia = mydeepcopy(matrix)
             for ele in copia[1:]:
                 del ele[index]
-                print(copia)
+                # print(copia)
             if index % 2 != 0:
                 result += - value * determinant(copia[1:])
             else:
