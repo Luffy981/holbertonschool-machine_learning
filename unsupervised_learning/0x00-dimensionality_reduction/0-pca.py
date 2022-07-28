@@ -12,9 +12,11 @@ def pca(X, var=0.95):
             n is the number of data points
             d is the number of dimensions in each point
             all dimensions have a mean of 0 across all data points
-        var is the fraction of the variance that the PCA transformation should maintain
+        var is the fraction of the variance that the PCA transformation
+        should maintain
     Returns:
-         the weights matrix, W, that maintains var fraction of X‘s original variance
+         the weights matrix, W, that maintains var fraction of X‘s
+         original variance
     """
     # SVD(Singular Value Deviation)
     # U = Unitary array(s).
