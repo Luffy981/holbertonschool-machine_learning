@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Module contains function for creating bag of words."""
+"""Module contains function for creating TF-IDF embedding."""
 
 
-from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import TfidfVectorizer
 
 
-def bag_of_words(sentences, vocab=None):
+def tf_idf(sentences, vocab=None):
     """
-    Creates a bag of words embedding matrix.
+    Creates a TF-IDF embedding.
 
     Args:
         sentences: List of sentences to analyze.
@@ -22,7 +22,7 @@ def bag_of_words(sentences, vocab=None):
         features: List of the features used for embeddings.
     """
 
-    vec = CountVectorizer(vocabulary=vocab)
+    vec = TfidfVectorizer(use_idf=True, vocabulary=vocab)
     X = vec.fit_transform(sentences)
 
     embeddings = X.toarray()
