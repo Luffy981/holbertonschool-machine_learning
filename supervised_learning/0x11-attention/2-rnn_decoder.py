@@ -3,6 +3,7 @@
 Create a class RNNDecoder to decode for machine translation
 """
 
+
 import tensorflow as tf
 SelfAttention = __import__('1-self_attention').SelfAttention
 
@@ -17,11 +18,11 @@ class RNNDecoder(tf.keras.layers.Layer):
         """
         super(RNNDecoder, self).__init__()
         self.embedding = tf.keras.layers.Embedding(input_dim=vocab,
-                output_dim=embedding)
+                                                   output_dim=embedding)
         self.gru = tf.keras.layers.GRU(units=units,
-                return_state=True,
-                return_sequences=True,
-                recurrent_initializer="glorot_uniform")
+                                       return_state=True,
+                                       return_sequences=True,
+                                       recurrent_initializer="glorot_uniform")
         self.F = tf.keras.layers.Dense(units=vocab)
 
     def call(self, x, s_prev, hidden_states):
