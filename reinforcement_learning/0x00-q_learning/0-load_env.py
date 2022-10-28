@@ -23,10 +23,12 @@ def load_frozen_lake(desc=None, map_name=None, is_slippery=False):
         environment = gym.make("FrozenLake-v1",
                                desc=generate_random_map(size=8),
                                map_name='8x8',
-                               is_slippery=is_slippery)
+                               is_slippery=is_slippery,
+                               render_mode="rgb_array")
     else:
         environment = gym.make("FrozenLake-v1",
                                desc=desc,
                                map_name=map_name,
-                               is_slippery=is_slippery)
+                               is_slippery=is_slippery,
+                               render_mode="rgb_array")
     return environment
