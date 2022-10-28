@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Loads the pre-made FrozenLakeEnv evnironment from OpenAI’s gym
+Loads the pre-made FrozenLakeEnv evnironment from OpenAI’s gy
 """
 import gym
 from gym.envs.toy_text.frozen_lake import generate_random_map
