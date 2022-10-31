@@ -470,7 +470,7 @@ if __name__ == "__main__":
     plt.scatter(C[:, 0], C[:, 1], s=50, marker='*', c=list(range(5)))
     plt.show()
 ```
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x01-clustering/images/k-means.png)
+![image](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x01-clustering/images/k-means.png)
 
 #### [Optimize K](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x01-clustering/3-optimum.py "Optimize K")
 Tests for the optimum number of clusters by variance.
@@ -507,15 +507,15 @@ if __name__ == "__main__":
 Formally a mixture model corresponds to the mixture distribution that represents the probability distribution of observations in the overall population. Density plots are used to analyze the density of high dimensional features. If multi-model densities are observed, then it is assumed that a finite set of densities are formed by a finite set of normal mixtures. A multivariate Gaussian mixture model is used to cluster the feature data into k number of groups where k represents each state of the machine. The machine state can be a normal state, power off state, or faulty state. Each formed cluster can be diagnosed using techniques such as spectral analysis.
 
 
-#### [Expectation](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x01-clustering/6-expectation.py "Expectation")
+#### [Expectation](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x01-clustering/6-expectation.py "Expectation")
 Calculates the expectation step in the EM algorithm for a GMM.
 
 
-#### [Maximization](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x01-clustering/7-maximization.py "Maximization")
+#### [Maximization](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x01-clustering/7-maximization.py "Maximization")
 Calculates the maximization step in the EM algorithm for a GMM.
 
 
-#### [Expectation Maximization](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x01-clustering/8-EM.py "Expectation Maximization")
+#### [Expectation Maximization](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x01-clustering/8-EM.py "Expectation Maximization")
 Performs the expectation maximization for a GMM.
 
 ``` python
@@ -551,11 +551,11 @@ Log Likelihood after 50 iterations: -94439.93891
 Log Likelihood after 52 iterations: -94439.93889
 ```
 
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x01-clustering/images/expectation-maximization.png)
+![image](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x01-clustering/images/expectation-maximization.png)
 
 ---
 
-#### [Bayesian Information Criterion](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x01-clustering/9-BIC.py "Bayesian Information Criterion")
+#### [Bayesian Information Criterion](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x01-clustering/9-BIC.py "Bayesian Information Criterion")
 Finds the best number of clusters for a GMM using the bayesian information criterion.
 
 ``` python
@@ -591,20 +591,20 @@ if __name__ == '__main__':
     plt.show()
 ```
 
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x01-clustering/images/bayes-info-criterion-1.png)
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x01-clustering/images/bayes-info-criterion-2.png)
+![image](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x01-clustering/images/bayes-info-criterion-1.png)
+![image](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x01-clustering/images/bayes-info-criterion-2.png)
 
 ---
 
-#### [K-Means Sklearn](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x01-clustering/10-kmeans.py "K-Means Sklearn")
+#### [K-Means Sklearn](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x01-clustering/10-kmeans.py "K-Means Sklearn")
 K-means clustering using sklearn.
 
-#### [GMM Sklearn](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x01-clustering/11-gmm.py "GMM Sklearn")
+#### [GMM Sklearn](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x01-clustering/11-gmm.py "GMM Sklearn")
 Gaussian mixture model using sklearn.
 
 ---
 
-#### [Agglomerative](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x01-clustering/12-agglomerative.py "Agglomerative")
+#### [Agglomerative](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x01-clustering/12-agglomerative.py "Agglomerative")
 Performs agglomerative clustering on a dataset using sklearn.cluster.hierarchy.
 
 ``` python
@@ -627,8 +627,8 @@ if __name__ == '__main__':
     plt.scatter(X[:, 0], X[:, 1], s=10, c=clss)
     plt.show()
 ```
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x01-clustering/images/agg-hierarchy.png)
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x01-clustering/images/agg-cluster.png)
+![image](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x01-clustering/images/agg-hierarchy.png)
+![image](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x01-clustering/images/agg-cluster.png)
 
 
 :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
@@ -636,171 +636,13 @@ if __name__ == '__main__':
 ---
 
 
-## [4. Bitcoin Closing Price Model Using an LSTM Recurrent Neural Network](https://github.com/AnthonyArmour/holbertonschool-machine_learning/tree/master/supervised_learning/0x01-time_series)
-
-### Task
-
-This code can be used for training sn LSTM network for predicting the closing price of bitcoin. I intend to improve the codes documentation as soon as I have the time. I'll leave a script example, a link for retrieving the bitcoin data, and the link to a comprehensive blog post I wrote that covers the project and results.
-
-#### [Bitstamp Data](https://www.kaggle.com/mczielinski/bitcoin-historical-data "Bitstamp Data")
-
-#### [Time Series Forecasting Using an LSTM Recurrent Neural Network](https://docs.google.com/document/d/1n-3OD8hzZtw3uh0kmm7c2z3PbSFf51io-_69bG_3-YY/edit?usp=sharing "Time Series Forecasting Using an LSTM Recurrent Neural Network")
-
-### Dependencies
-| Library/Framework  | Version |
-| ------------------ | ------- |
-| Python             | ^3.7.3  |
-| numpy              | ^1.19.5 |
-| matplotlib         | ^3.4.3  |
-| tensorflow         | ^2.6.0  |
-| keras              | ^2.6.0  |
-| pandas             | ^1.3.2  |
-| tqdm               | ^4.62.3 |
-
-``` python
-from forecast_btc import save_resampled_dataframe, BTC_Forecasting
-
-## save_resampled_dataframe takes two additional parameters
-## load_folder = path of folder containing bitcoin data csv
-## save_folder = path with new folder name where you want the data
-## to be saved.
-
-path = save_resampled_dataframe(offset="H")
-input_dim =	8
-output_dim = 1
-nodes =	50
-batch_size = 32
-epochs = 64
-plot_file = "test_performace.jpg"
-
-
-TS = BTC_Forecasting(
-    path, input_dim, output_dim, nodes,
-    load_model=False, batch_size=batch_size
-    )
-
-history = TS.train_model(epochs, save=False)
-
-error = TS.predict_testset()
-
-print("Performance Error: ", error)
-```
-
-:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
-
----
-
-
-
-## [5. Gradient Descent](https://github.com/AnthonyArmour/holbertonschool-machine_learning/tree/master/supervised_learning/gradient_descent)
-
-This folder contains the code I wrote for a gradient descent explanation. The code includes gradient descent for linear regression and the animations that represent the optimization process.
-
-### Dependencies
-| Library/Framework  | Version |
-| ------------------ | ------- |
-| Python             | ^3.7.3  |
-| numpy              | ^1.19.5 |
-| matplotlib         | ^3.4.3  |
-
-### [Gradient Descent Animation Scripts](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/gradient_descent/gradient_descent.py "Gradient Descent Animation Scripts")
-
-``` python
-if __name__ == "__main__":
-
-    ## Secant to tangent plot
-    fig, ax = plt.subplots()
-    fig.set_figheight(6)
-    fig.set_figwidth(10)
-    animation = Animation(ax)
-    ani = FuncAnimation(fig, animation.secant_to_tangent, frames=121, interval=100)
-    ani.save("./animations/secant_to_tangent.gif", writer="pillow")
-```
-
----
-![gif](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/gradient_descent/animations/secant_to_tangent.gif)
-
----
-
-``` python
-if __name__ == "__main__":
-
-    ## slope and intercept animation
-    GD = GradientDescent(0.4, 3, si_loss=True)
-    weight, bias = GD.optimize_slope_intercept(200)
-    GD.b.append(bias)
-    GD.w.append(weight)
-    GD.b = np.array(GD.b)
-    GD.w = np.array(GD.w)
-    GD.loss_space()
-    OptAni = OptimizationAnimation(GD.w, GD.b, np.amax(GD.y)+5, func=GD.plot_residuals, obj=GD)
-    OptAni.make_animation(OptAni.linear_regression, file="./animations/slope_intercept_fit.gif", interval=80)
-    OptAni.make_animation(OptAni.gradient_descent, file="./animations/slope_intercept_optimization.gif", interval=125, d3=True)
-```
-
----
-![gif](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/gradient_descent/animations/slope_intercept_fit.gif)
-
----
-
----
-![gif](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/gradient_descent/animations/slope_intercept_optimization.gif)
-
----
-
-``` python
-if __name__ == "__main__":
-
-    ## Intercept animation
-    GD = GradientDescent(0.4, 3)
-    bias = GD.optimize_intercept()
-    GD.plot_residuals(0.4, bias, show=False, save="linear_regression.png")
-    GD.plot_residuals(0.4, GD.b[0], show=False, save="start_linear_regression.png")
-    GD.b.append(bias)
-    GD.b = np.array(GD.b)
-    GD.loss_space()
-    GD.intercept_losses = np.array(GD.intercept_losses)
-    GD.w = np.full((GD.b.size), 0.4)
-    OptAni = OptimizationAnimation(GD.w, GD.b, np.amax(GD.y)+5, func=GD.plot_residuals, obj=GD)
-    OptAni.make_animation(OptAni.linear_regression, file="./animations/intercept_fit.gif", interval=150)
-    OptAni.lim = np.amax(GD.intercept_losses)+2
-    OptAni.make_animation(OptAni.intercept_derivative, file="./animations/intercept_optimization.gif", interval=150)
-```
-
----
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/gradient_descent/animations/linear_regression.png)
-
----
-
----
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/gradient_descent/animations/start_linear_regression.png)
-
----
-
-
----
-![gif](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/gradient_descent/animations/intercept_fit.gif)
-
----
-
----
-![gif](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/gradient_descent/animations/intercept_optimization.gif)
-
----
-
-:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
-
----
-
-
-
-## 6. [Gaussian Processes and Bayesian Optimization](https://github.com/AnthonyArmour/holbertonschool-machine_learning/tree/master/unsupervised_learning/0x00-hyperparameter_tuning)
+## 4. [Gaussian Processes and Bayesian Optimization](https://github.com/Luffy981/holbertonschool-machine_learning/tree/master/unsupervised_learning/0x03-hyperparameter_tuning)
 
 Used to model a function given a small amount of data points, Gaussian process is a stochastic process (a collection of random variables indexed by time or space), such that every finite collection of those random variables has a multivariate normal distribution. Gaussian processes can be seen as an infinite-dimensional generalization of multivariate normal distributions. Gaussian processes fit the data by getting the mean over distributions and define uncertainty along the model by the variance along those sampled distributions.
 
 Bayesian optimization is a sequential design strategy for global optimization of black-box functions that does not assume any functional forms. It is usually employed to optimize expensive-to-evaluate functions. It takes a model like a gaussian process to define a posterior and works by finding the sample location that maximizes the expected improvement of the objective function.
 
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x00-hyperparameter_tuning/Images/plot_posterior.jpg)
+![image](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x03-hyperparameter_tuning/images/plot_posterior.jpg)
 
 In this project, we create a Gaussian process from scratch and use it for Bayesian optimization of a blackbox function. The school project continues the class for each file, the complete classes can be found in 2-gp.py and 5-bayes_opt.py
 
@@ -814,7 +656,7 @@ In this project, we create a Gaussian process from scratch and use it for Bayesi
 
 ### Tasks
 
-#### [Gaussian Process](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x00-hyperparameter_tuning/2-gp.py "Gaussian Process")
+#### [Gaussian Process](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x03-hyperparameter_tuning/2-gp.py "Gaussian Process")
 Class that represents a noiseless 1D Gaussian Process.
 
 ``` python
@@ -840,7 +682,7 @@ if __name__ == '__main__':
 ```
 ---
 
-#### [Bayesian Optimization](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x00-hyperparameter_tuning/5-bayes_opt.py "Bayesian Optimization")
+#### [Bayesian Optimization](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x03-hyperparameter_tuning/5-bayes_opt.py "Bayesian Optimization")
 Class for bayesian optimization.
 
 ``` python
@@ -897,10 +739,10 @@ if __name__ == '__main__':
     plt.show()
 ```
 
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x00-hyperparameter_tuning/Images/BO_Aquisition.jpg)
+![image](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x03-hyperparameter_tuning/images/BO_Aquisition.jpg)
 ---
 
-#### [Plot Gaussian Process](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x00-hyperparameter_tuning/Plot_Gaussian_Process.py "Plot Gaussian Process")
+#### [Plot Gaussian Process](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x03-hyperparameter_tuning/Plot_Gaussian_Process.py "Plot Gaussian Process")
 Generates the plot at the top of the readme.
 
 | Library/Framework  | Version |
@@ -930,164 +772,6 @@ Generates the plot at the top of the readme.
 | dlib               | ^19.17.0 |
 
 
-## [7. Face Verification Project in Keras](https://github.com/AnthonyArmour/holbertonschool-machine_learning/tree/master/supervised_learning/0x01-face_verification)
-
-[Download FVTriplets.csv](https://intranet.hbtn.io/rltoken/K2eKViOeIaz2t56yN5aUiA "Download FVTriplets.csv")
-[Download Images](https://intranet.hbtn.io/rltoken/HUFcrjudLFdlb1njAwE8xw "Download Images")
-[Download face_verification.h5](https://intranet-projects-files.s3.amazonaws.com/holbertonschool-ml/face_verification.h5 "Download face_verification.h5")
-[Download Shape_Predictor](http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2 "Download Shape_Predictor")
-
-### Tasks
-
-#### [Utils](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-face_verification/utils.py "Utils")
-Utility class for face verification project.
-
-Contains:
-* load_images(images_path, as_array=bool)
-        - Loads images from directory according to images_path.
-* load_csv(csv_path, params={})
-        - List of lists containing contents of csv.
-* save_images(path, images, filenames)
-        - Saves images with filenames to path parameter.
-* generate_triplets(images, filenames, triplet_names)
-        - Generates list of triplets based on sublists of triplet_names parameter. Returns [A, P, N]
----
-
-#### [Align](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-face_verification/align.py "Align")
-Class built for detecting faces then applying a transformation and rotation for face alignment.
-
-Contains:
-* detect(image) - Uses dlib.get_frontal_face_detector to detect face in image.
-* find_landmarks(image, detection) - Uses dlib.shape_predictor to find 68 facial landmarks.
-* align(image, landmark_indices, anchor_points, size=96) - Aligns an image for face verification.
----
-
-#### [TripletLoss](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-face_verification/triplet_loss.py "TripletLoss")
-Class for computing triplet loss for Siamese network. Inherits from keras.layers.Layer.
-
-Contains:
-* triplet_loss(inputs) - computes triplet loss for each anchor, positive, and negative in inputs.
----
-
-#### [TrainModel](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-face_verification/train_model.py "TrainModel")
-Class that trains Siamese network using triplet loss.
-
-Contains:
-* train(triplets, epochs, batch_size) - fit method
-* f1_score(y_true, y_pred) - prediction metric
-* accuracy(y_true, y_pred) - prediction metric
----
-
-#### [FaceVerification](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-face_verification/verification.py "FaceVerification")
-> Class for utilizing trained face verification model.
-
-Contains:
-* embedding(images) - Gets logits of image from face verification model.
-* verify(image, tau) - returns face verification based on minimum euclidean distance <= tau.
-
-
-
-## Examples
-
-
-#### [Face Alignment](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-face_verification/align.py "Face Alignment")
-Aligns faces and stores them in new directory.
-
-```python
-from align import FaceAlign
-import matplotlib.pyplot as plt
-import numpy as np
-import os
-from utils import load_images, save_images
-
-fa = FaceAlign('models/landmarks.dat')
-images, filenames = load_images('Image_Directory', as_array=False)
-anchors = np.array([[0.194157, 0.16926692], [0.7888591, 0.15817115], [0.4949509, 0.5144414]], dtype=np.float32)
-aligned = []
-for image in images:
-    aligned.append(fa.align(image, np.array([36, 45, 33]), anchors, 96))
-aligned = np.array(aligned)
-print(aligned.shape)
-if not os.path.isdir('New_Aligned_Dir'):
-    print(save_images('New_Aligned_Dir', aligned, filenames))
-    os.mkdir('New_Aligned_Dir')
-print(save_images('New_Aligned_Dir', aligned, filenames))
-print(os.listdir('New_Aligned_Dir'))
-image = plt.imread('New_Aligned_Dir/KirenSrinivasan.jpg')
-plt.imshow(image)
-plt.show()
-```
-
-#### Aligned Image
----
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-face_verification/images/aligned.png)
----
-
-#### Train Model
-
-```python
-import os
-import numpy as np
-import tensorflow as tf
-from train_model import TrainModel
-from utils import load_images, load_csv, generate_triplets
-
-images, filenames = load_images('New_Aligned_Dir', as_array=True)
-images = images.astype('float32') / 255
-
-triplet_names = load_csv('FVTriplets.csv')
-A, P, N = generate_triplets(images, filenames, triplet_names)
-triplets = [A[:-2], P[:-2], N[:-2]] 
-
-tm = TrainModel('models/face_verification.h5', 0.2)
-tm.train(triplets, epochs=1)
-base_model = tm.save('models/trained_fv.h5')
-```
-
-```
-Train on 3584 samples, validate on 1536 samples
-Epoch 1/1
-3584/3584 [==============================] - 69s 19ms/step - loss: 0.0053 - val_loss: 0.1373
-```
-
-#### Verify Faces
-```python
-from matplotlib.pyplot import imread, imsave
-import numpy as np
-import tensorflow as tf
-from utils import load_images
-from verification import FaceVerification
-
-Dir = "New_Aligned_Dir/"
-
-database_files = [Dir+'HeimerRojas.jpg', Dir+'MariaCoyUlloa.jpg', Dir+'MiaMorton.jpg', Dir+'RodrigoCruz.jpg', Dir+'XimenaCarolinaAndradeVargas.jpg']
-database_imgs = np.zeros((5, 96, 96, 3))
-for i, f in enumerate(database_files):
-    database_imgs[i] = imread(f)
-
-database_imgs = database_imgs.astype('float32') / 255
-
-with tf.keras.utils.CustomObjectScope({'tf': tf}):
-    base_model = tf.keras.models.load_model('models/face_verification.h5')
-    database_embs = base_model.predict(database_imgs)
-
-test_img_positive = imread(Dir+'HeimerRojas0.jpg').astype('float32') / 255
-test_img_negative = imread(Dir+'KirenSrinivasan.jpg').astype('float32') / 255
-
-identities = ['HeimerRojas', 'MariaCoyUlloa', 'MiaMorton', 'RodrigoCruz', 'XimenaCarolinaAndradeVargas']
-fv = FaceVerification('models/face_verification.h5', database_embs, identities)
-print(fv.verify(test_img_positive, tau=0.5))
-print(fv.verify(test_img_negative, tau=0.5))
-```
-
-```
-Positive image: HeimerRojas0.jpg
-Predicted identity: ('HeimerRojas', 0.42472672)
-
-Negative image: KirenSrinivasan.jpg
-Predicted identity: (None, None)
-```
-
 :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 ---
@@ -1095,14 +779,14 @@ Predicted identity: (None, None)
 
 
 
-## [8. Recurrent Neural Networks](https://github.com/AnthonyArmour/holbertonschool-machine_learning/tree/master/supervised_learning/0x00-RNNs)
+## [5. Recurrent Neural Networks](https://github.com/Luffy981/holbertonschool-machine_learning/tree/master/supervised_learning/0x0D-RNNs)
 Recurrent Neural Networks (RNNs) are state of the art algorithms for sequential data. They are a powerful machine learning technique that achieves an internal memory which makes them perfectly suited for solving problems involving sequential data. RNNs are a robust type of neural network and gain their power by including an internal memory of input history to help make predictions on future time steps. RNNs are used to model data that have temporal dynamics. To understand RNNs it is important to have knowledge of a normal feed-forward neural network.
 
 The meaningful difference between RNNs and traditional feed-forward neural networks is the way that they channel information. In a feed-forward network, the information moves in a single direction: from the input layer, through the hidden layers, to the output layer. The information never touches the same node twice, moving straight through the network. Each prediction is deterministic with respect to the network’s inputs. This is due to it’s set internal parameters which directly influences the forward pass of operations that make up the final prediction. Feed-forward networks only consider the current input and have no memory of previous inputs; thus, having no notion of order in time. The state of a feed-forward network after training could be thought of as “memory” from training, but this has nothing to do with a learned representation of temporal dynamics. They simply can’t remember anything from the past except for their internal weights learned during training. Here’s a truth to get a better picture: every unique input passed through a feed-forward network has the same output every time. In contrast, RNNs, can make a different prediction at a given time step for the same input.
 
 In an RNN the information cycles through a loop. When it makes a prediction, it considers the current input and also what it has observed from previously received inputs. Here is an image representing the architectural difference between a Recurrent Neural Network and a traditional feed-forward neural network.
 
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x00-RNNs/images/RNN.jpeg)
+![image](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x0D-RNNs/images/RNN.jpeg)
 
 To put it simply, an RNN adds the immediate past to the present. Thus, an RNN has two inputs: the recurrent past and the present input. Like feed-forward networks, RNNs assign a weight matrix to it’s layer inputs, but differ from traditional networks in their application of weights to previous inputs. Their optimization procedure (backpropagation through time) also sets them apart from traditional feed-forward networks.
 
@@ -1129,7 +813,7 @@ There are two big obstacles that RNNs need to deal with, but it is important to 
 ### Tasks
 This project implements the forward pass of the following recurrent neural network architectures from scratch in numpy. There is nothing visually interesting about this project. More interesting implementations of RNNs using the keras API can be found in the root of this repository.
 
-#### [RNN Cell](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x00-RNNs/0-rnn_cell.py "RNN Cell")
+#### [RNN Cell](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x0D-RNNs/0-rnn_cell.py "RNN Cell")
 Represents a cell of a simple RNN.
 
 ``` python
@@ -1156,7 +840,7 @@ print(y)
 ```
 ---
 
-#### [RNN](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x00-RNNs/1-rnn.py "RNN")
+#### [RNN](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x0D-RNNs/1-rnn.py "RNN")
 Performs forward propagation for a simple RNN.
 
 ``` python
@@ -1180,7 +864,7 @@ print(Y)
 ```
 ---
 
-#### [GRU Cell](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x00-RNNs/2-gru_cell.py "GRU Cell")
+#### [GRU Cell](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x0D-RNNs/2-gru_cell.py "GRU Cell")
 Represents a gated recurrent unit for a RNN.
 
 ``` python
@@ -1213,7 +897,7 @@ print(y)
 ```
 ---
 
-#### [LSTM Cell](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x00-RNNs/3-lstm_cell.py "LSTM Cell")
+#### [LSTM Cell](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x0D-RNNs/3-lstm_cell.py Cell")
 Represents an LSTM unit for a RNN.
 
 ``` python
@@ -1252,7 +936,7 @@ print(y)
 ```
 ---
 
-#### [Deep RNN](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x00-RNNs/4-deep_rnn.py "Deep RNN")
+#### [Deep RNN](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x0D-RNNs/4-deep_rnn.py "Deep RNN")
 Performs forward propagation for a deep RNN.
 
 ``` python
@@ -1280,7 +964,7 @@ print(Y)
 ```
 ---
 
-#### [Bidirectional Cell Forward](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x00-RNNs/5-bi_forward.py "Bidirectional Cell Forward")
+#### [Bidirectional Cell Forward](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x0D-RNNs/5-bi_forward.py "Bidirectional Cell Forward")
 BidirectionalCell represents a bidirectional cell of an RNN - forward method calculates the hidden state in the backward direction for one time step.
 
 ``` python
@@ -1306,7 +990,7 @@ print(h)
 ```
 ---
 
-#### [Bidirectional Cell Backward](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x00-RNNs/6-bi_backward.py "Bidirectional Cell Backward")
+#### [Bidirectional Cell Backward](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x0D-RNNs/6-bi_backward.py Cell Backward")
 BidirectionalCell represents a bidirectional cell of an RNN - backward method calculates the hidden state in the backward direction for one time step.
 
 ``` python
@@ -1326,7 +1010,7 @@ print(h)
 ```
 ---
 
-#### [Bidirectional Output](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x00-RNNs/7-bi_output.py "Bidirectional Output")
+#### [Bidirectional Output](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x0D-RNNs/7-bi_output.py "Bidirectional Output")
 Calculates all outputs for the RNN.
 
 ``` python
@@ -1345,7 +1029,7 @@ print(Y)
 ```
 ---
 
-#### [Bidirectional RNN](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x00-RNNs/8-bi_rnn.py "Bidirectional RNN")
+#### [Bidirectional RNN](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x0D-RNNs/8-bi_rnn.py RNN")
 Performs forward propagation for a bidirectional RNN.
 
 ``` python
@@ -1373,7 +1057,7 @@ print(Y)
 ---
 
 
-## [9. Neural Networks](https://github.com/AnthonyArmour/holbertonschool-machine_learning/tree/master/supervised_learning/0x01-classification)
+## [6. Neural Networks](https://github.com/Luffy981/holbertonschool-machine_learning/tree/master/supervised_learning/0x01-classification)
 Making and training a classification neural network from scratch using numpy to classify hand written digits provided in the MNIST dataset. The assignment starts with building a single neuron for binary classification and builds up to a multi-layer perceptron network for classification of digits 0-9.
 
 A neural network is a network or circuit of  artificial neurons or nodes. The connections of biological neurons are modeled in artificial neural networks as weights between nodes. A positive weight reflects an excitatory connection, while negative values mean inhibitory connections. All inputs are modified by a weight and summed. This activity is referred to as a linear combination. Finally, an activation function controls the amplitude of the output. For example, an acceptable range of output is usually between 0 and 1, or it could be −1 and 1.
@@ -1395,7 +1079,7 @@ In machine learning, classification refers to a predictive modeling problem wher
 ### Tasks
 
 
-#### [Class Neuron](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-classification/7-neuron.py "Class Neuron")
+#### [Class Neuron]https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-classification/7-neuron.py "Class Neuron")
 Defines and trains a single neuron performing binary classification.
 
 ``` python
@@ -1442,7 +1126,7 @@ Cost after 100 iterations: 0.11955134491351888
 Cost after 3000 iterations: 0.013386353289868338
 ```
 ---
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-classification/images/neuron-1.png)
+![image](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-classification/images/neuron-1.png)
 
 ---
 
@@ -1453,11 +1137,11 @@ Dev cost: 0.010803484515167197
 Dev accuracy: 99.81087470449172%
 ```
 ---
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-classification/images/neuron-2.png)
+![image](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-classification/images/neuron-2.png)
 
 ---
 
-#### [Class NeuralNetwork](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-classification/15-neural_network.py "Class NeuralNetwork")
+#### [Class NeuralNetwork](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-classification/15-neural_network.py "Class NeuralNetwork")
 Defines and trains a neural network with one hidden layer performing binary classification.
 
 ``` python
@@ -1505,7 +1189,7 @@ Cost after 5000 iterations: 0.024369225667283875
 ```
 
 ---
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-classification/images/NeuralNetwork-1.png)
+![image](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-classification/images/NeuralNetwork-1.png)
 
 ---
 
@@ -1517,12 +1201,12 @@ Dev accuracy: 99.57446808510639%
 ```
 
 ---
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-classification/images/NeuralNetwork-2.png)
+![image](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-classification/images/NeuralNetwork-2.png)
 
 ---
 
 
-#### [Class DeepNeuralNetwork](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-classification/23-deep_neural_network.py "Class DeepNeuralNetwork")
+#### [Class DeepNeuralNetwork](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-classification/23-deep_neural_network.py "Class DeepNeuralNetwork")
 Defines and trains a deep neural network performing binary classification.
 
 ``` python
@@ -1570,7 +1254,7 @@ Cost after 5000 iterations: 0.011671820326008168
 ```
 
 ---
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-classification/images/DeepNeuralNetwork-1.png)
+![image](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-classification/images/DeepNeuralNetwork-1.png)
 
 ---
 
@@ -1582,11 +1266,11 @@ Dev accuracy: 99.95271867612293%
 ```
 
 ---
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-classification/images/DeepNeuralNetwork-2.png)
+![image](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-classification/images/DeepNeuralNetwork-2.png)
 
 ---
 
-#### [Multiclass Classification](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-classification/28-deep_neural_network.py "Multiclass Classification")
+#### [Multiclass Classification](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-classification/28-deep_neural_network.py "Multiclass Classification")
 Updates the class DeepNeuralNetwork to perform multiclass classification.
 
 ``` python
@@ -1696,7 +1380,7 @@ Test accuracy: 89.0%
 ```
 
 ---
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-classification/images/multiclass-1.png)
+![image](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-classification/images/multiclass-1.png)
 
 ---
 
@@ -1722,7 +1406,7 @@ Test accuracy: 94.77%
 ```
 
 ---
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-classification/images/multiclass-2.png)
+![image](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-classification/images/multiclass-2.png)
 
 ---
 
@@ -1731,7 +1415,7 @@ Test accuracy: 94.77%
 ---
 
 
-## [10. Convolutional Neural Network Project](https://github.com/AnthonyArmour/holbertonschool-machine_learning/tree/master/supervised_learning/0x00-cnn)
+## [7. Convolutional Neural Network Project](https://github.com/Luffy981/holbertonschool-machine_learning/tree/master/supervised_learning/0x07-cnn)
 Convolutional neural network (CNN, or ConvNet) is a class of Artificial Neural Network, most commonly applied to analyze visual imagery. CNNs are regularized versions of multilayer perceptrons. Multilayer perceptrons usually mean fully connected networks, that is, each neuron in one layer is connected to all neurons in the next layer. The "full connectivity" of these networks make them prone to overfitting data. Typical ways of regularization, or preventing overfitting, include: penalizing parameters during training (such as weight decay) or trimming connectivity (skipped connections, dropout, etc.) CNNs take a different approach towards regularization: they take advantage of the hierarchical pattern in data and assemble patterns of increasing complexity using smaller and simpler patterns embossed in their filters. Therefore, on a scale of connectivity and complexity, CNNs are on the lower extreme.
 
 Convolutional networks were inspired by biological processes in that the connectivity pattern between neurons resembles the organization of the animal visual cortex. Individual cortical neurons respond to stimuli only in a restricted region of the visual field known as the receptive field. The receptive fields of different neurons partially overlap such that they cover the entire visual field.
@@ -1748,7 +1432,7 @@ Convolutional networks were inspired by biological processes in that the connect
 ### Tasks
 Performing forward and backward prop on conv nets with numpy, as well as building lenet5 convolutional architectures in tensorflow and keras.
 
-#### [conv_forward](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x00-cnn/0-conv_forward.py "conv_forward")
+#### [conv_forward](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x07-cnn/0-conv_forward.py "conv_forward")
 Performs forward propagation over a convolutional layer of a neural network.
 ``` python
 #!/usr/bin/env python3
@@ -1781,18 +1465,18 @@ if __name__ == "__main__":
 Training set...
 
 ---
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x00-cnn/images/cnn-1-trainset.png)
+![image](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x07-cnn/images/cnn-1-trainset.png)
 
 ---
 Convolutional output...
 
 ---
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x00-cnn/images/cnn-1-cnn1.png)
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x00-cnn/images/cnn-1-cnn2.png)
+![image](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x07-cnn/images/cnn-1-cnn1.png)
+![image](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x07-cnn/images/cnn-1-cnn2.png)
 
 ---
 
-#### [pool_forward](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x00-cnn/1-pool_forward.py "pool_forward")
+#### [pool_forward](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x07-cnn/1-pool_forward.py "pool_forward")
 Performs forward propagation over a pooling layer of a neural network.
 ``` python
 #!/usr/bin/env python3
@@ -1823,19 +1507,19 @@ if __name__ == "__main__":
 Training set...
 
 ---
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x00-cnn/images/cnn-2-trainset1.png)
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x00-cnn/images/cnn-2-trainset2.png)
+![image](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x07-cnn/images/cnn-2-trainset1.png)
+![image](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x07-cnn/images/cnn-2-trainset2.png)
 
 ---
 Pooling output...
 
 ---
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x00-cnn/images/cnn-2-pool1.png)
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x00-cnn/images/cnn-2-pool2.png)
+![image](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x07-cnn/images/cnn-2-pool1.png)
+![image](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x07-cnn/images/cnn-2-pool2.png)
 
 ---
 
-#### [conv_backward](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x00-cnn/2-conv_backward.py "conv_backward")
+#### [conv_backward](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x07-cnn/2-conv_backward.py "conv_backward")
 Performs back propagation over a convolutional layer of a neural network.
 ``` python
 #!/usr/bin/env python3
@@ -1858,7 +1542,7 @@ if __name__ == "__main__":
 ```
 ---
 
-#### [pool_backward](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x00-cnn/3-pool_backward.py "pool_backward")
+#### [pool_backward](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x07-cnn/3-pool_backward.py "pool_backward")
 
 Performs back propagation over a pooling layer of a neural network.
 ``` python
@@ -1882,11 +1566,11 @@ if __name__ == "__main__":
 ---
 
 ### Lenet5 Architecture
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x00-cnn/images/lenet5.png)
+![image](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x07-cnn/images/lenet5.png)
 
 
 
-#### [lenet5 tensorflow](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x00-cnn/4-lenet5.py "lenet5 tensorflow")
+#### [lenet5 tensorflow](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x07-cnn/4-lenet5.py "lenet5 tensorflow")
 Modified version of the LeNet-5 architecture using tensorflow.
 ``` python
 #!/usr/bin/env python3
@@ -1947,9 +1631,9 @@ After 4 epochs: 0.02096478082239628 cost, 0.9934599995613098 accuracy, 0.0453668
 After 5 epochs: 0.01851615309715271 cost, 0.9940599799156189 accuracy, 0.04946666955947876 validation cost, 0.9879999756813049 validation accuracy
 
 ```
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x00-cnn/images/lenet5-pred-1.png)
+![image](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x07-cnn/images/lenet5-pred-1.png)
 
-#### [lenet5 keras](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x00-cnn/5-lenet5.py "lenet5 keras")
+#### [lenet5 keras](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x07-cnn/5-lenet5.py "lenet5 keras")
 Modified version of the LeNet-5 architecture using keras.
 
 ``` python
@@ -2013,7 +1697,7 @@ Epoch 5/5
 50000/50000 [==============================] - 33s 653us/step - loss: 0.0289 - acc: 0.9907 - val_loss: 0.0509 - val_acc: 0.9870
 ```
 
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x00-cnn/images/lenet5-pred-2.png)
+![image](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x07-cnn/images/lenet5-pred-2.png)
 
 ---
 
@@ -2022,7 +1706,7 @@ Epoch 5/5
 ---
 
 
-## [11. Deep Convolutional Neural Networks](https://github.com/AnthonyArmour/holbertonschool-machine_learning/tree/master/supervised_learning/0x01-deep_cnns)
+## [8. Deep Convolutional Neural Networks](https://github.com/Luffy981/holbertonschool-machine_learning/tree/master/supervised_learning/0x08-deep_cnns)
 Convolutional neural network (CNN, or ConvNet) is a class of Artificial Neural Network, most commonly applied to analyze visual imagery. CNNs are regularized versions of multilayer perceptrons. Multilayer perceptrons usually mean fully connected networks, that is, each neuron in one layer is connected to all neurons in the next layer. The "full connectivity" of these networks make them prone to overfitting data. Typical ways of regularization, or preventing overfitting, include: penalizing parameters during training (such as weight decay) or trimming connectivity (skipped connections, dropout, etc.) CNNs take a different approach towards regularization: they take advantage of the hierarchical pattern in data and assemble patterns of increasing complexity using smaller and simpler patterns embossed in their filters. Therefore, on a scale of connectivity and complexity, CNNs are on the lower extreme.
 
 Convolutional networks were inspired by biological processes in that the connectivity pattern between neurons resembles the organization of the animal visual cortex. Individual cortical neurons respond to stimuli only in a restricted region of the visual field known as the receptive field. The receptive fields of different neurons partially overlap such that they cover the entire visual field.
@@ -2040,10 +1724,10 @@ Convolutional networks were inspired by biological processes in that the connect
 [vanishing gradient](https://en.wikipedia.org/wiki/Vanishing_gradient_problem)
 Corresponding papers linked with each task discription.
 
-#### [inception_block](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-deep_cnns/0-inception_block.py "inception_block")
+#### [inception_block](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x08-deep_cnns/0-inception_block.py "inception_block")
 Builds an inception block as described in [Going Deeper with Convolutions](https://arxiv.org/pdf/1409.4842.pdf "Going Deeper with Convolutions")
 ---
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-deep_cnns/images/inception-block.png)
+![image](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x08-deep_cnns/images/inception-block.png)
 ---
 ``` python
 #!/usr/bin/env python3
@@ -2094,10 +1778,10 @@ ________________________________________________________________________________
 </details>
 
 
-#### [inception_network](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-deep_cnns/1-inception_network.py "inception_network")
+#### [inception_network](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x08-deep_cnns/1-inception_network.py "inception_network")
 Builds an inception block as described in [Going Deeper with Convolutions](https://arxiv.org/pdf/1409.4842.pdf)
 ---
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-deep_cnns/images/inception-network.png)
+![image](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x08-deep_cnns/images/inception-network.png)
 ---
 ``` python
 #!/usr/bin/env python3
@@ -2317,10 +2001,10 @@ ________________________________________________________________________________
 ```
 </details>
 
-#### [identity_block](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-deep_cnns/2-identity_block.py "identity_block")
+#### [identity_block](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x08-deep_cnns/2-identity_block.py "identity_block")
 Builds an identity block as described in [Deep Residual Learning for Image Recognition](https://arxiv.org/pdf/1512.03385.pdf)
 ---
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-deep_cnns/images/identity-block.png)
+![image](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x08-deep_cnns/images/identity-block.png)
 ---
 ``` python
 #!/usr/bin/env python3
@@ -2372,10 +2056,10 @@ ________________________________________________________________________________
 ```
 </details>
 
-#### [projection_block](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-deep_cnns/3-projection_block.py "projection_block")
+#### [projection_block](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x08-deep_cnns/3-projection_block.py "projection_block")
 Builds a projection block as described in [Deep Residual Learning for Image Recognition](https://arxiv.org/pdf/1512.03385.pdf)
 ---
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-deep_cnns/images/projection-block.png)
+![image](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x08-deep_cnns/images/projection-block.png)
 ---
 ``` python
 #!/usr/bin/env python3
@@ -2432,10 +2116,10 @@ ________________________________________________________________________________
 </details>
 
 
-#### [resnet50](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-deep_cnns/4-resnet50.py "resnet50")
+#### [resnet50](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x08-deep_cnns/4-resnet50.py "resnet50")
 Builds the ResNet-50 architecture as described in [Deep Residual Learning for Image Recognition](https://arxiv.org/pdf/1512.03385.pdf)
 ---
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-deep_cnns/images/resnet50.png)
+![image](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x08-deep_cnns/images/resnet50.png)
 ---
 ``` python
 #!/usr/bin/env python3
@@ -2828,10 +2512,10 @@ ________________________________________________________________________________
 ```
 </details>
 
-#### [dense_block](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-deep_cnns/5-dense_block.py "dense_block")
+#### [dense_block](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x08-deep_cnns/5-dense_block.py "dense_block")
 Builds a dense block as described in [Densely Connected Convolutional Networks](https://arxiv.org/pdf/1608.06993.pdf)
 ---
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-deep_cnns/images/dense-block.png)
+![image](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x08-deep_cnns/images/dense-block.png)
 ---
 ``` python
 #!/usr/bin/env python3
@@ -2955,7 +2639,7 @@ ________________________________________________________________________________
 ```
 </details>
 
-#### [transition_layer](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-deep_cnns/6-transition_layer.py "transition_layer")
+#### [transition_layer](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x08-deep_cnns/6-transition_layer.py "transition_layer")
 Builds a transition layer as described in [Densely Connected Convolutional Networks](https://arxiv.org/pdf/1608.06993.pdf)
 
 ``` python
@@ -2997,10 +2681,10 @@ _________________________________________________________________
 ```
 </details>
 
-#### [densenet121](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-deep_cnns/7-densenet121.py "densenet121")
+#### [densenet121](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x08-deep_cnns/7-densenet121.py "densenet121")
 Builds the DenseNet-121 architecture as described in [Densely Connected Convolutional Networks](https://arxiv.org/pdf/1608.06993.pdf)
 ---
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/supervised_learning/0x01-deep_cnns/images/dense-net.png)
+![image](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/supervised_learning/0x08-deep_cnns/images/dense-net.png)
 ---
 ``` python
 #!/usr/bin/env python3
@@ -3941,7 +3625,7 @@ ________________________________________________________________________________
 ---
 
 
-## [12. Autoencoders Project](https://github.com/AnthonyArmour/holbertonschool-machine_learning/tree/master/unsupervised_learning/0x00-autoencoders)
+## [9. Autoencoders Project](https://github.com/Luffy981/holbertonschool-machine_learning/tree/master/unsupervised_learning/0x04-autoencoders)
 Autoencoders are an unsupervised learning technique and are a type of artificial neural network used to learn efficient codings of unlabeled data. It is essentially a learned dimensionality reduction technique, where the reduced dimensions exists in the latent vector space. The encoding is validated and refined by learning to regenerate the input from the encoding. In this project, we learned to build autoencoder models using the keras framework on the mnist dataset.
 
 ### Dependencies
@@ -3955,7 +3639,7 @@ Autoencoders are an unsupervised learning technique and are a type of artificial
 
 ### Tasks
 
-#### [Vanilla Autoencoder](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x00-autoencoders/0-vanilla.py "Valnilla Autoencoder")
+#### [Vanilla Autoencoder](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x04-autoencoders/0-vanilla.py "Valnilla Autoencoder")
 A function that creates a vanilla autoencoder network.
 
 ``` python
@@ -3992,11 +3676,11 @@ for i in range(10):
 plt.show()
 ```
 
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x00-autoencoders/images/autoencoders-0.png)
+![image](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x04-autoencoders/images/autoencoders-0.png)
 
 ---
 
-#### [Sparse Encoder](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x00-autoencoders/1-sparse.py "Sparse Encoder")
+#### [Sparse Encoder](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x04-autoencoders/1-sparse.py "Sparse Encoder")
 Creates autoencoder network with sparse activatons.
 
 ``` python
@@ -4032,11 +3716,11 @@ for i in range(10):
     plt.imshow(reconstructed[i].reshape((28, 28)))
 plt.show()
 ```
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x00-autoencoders/images/autoencoders-1.png)
+![image](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x04-autoencoders/images/autoencoders-1.png)
 
 ---
 
-#### [Convolutional Autoencoder](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x00-autoencoders/2-convolutional.py "Convolutional Autoencoder")
+#### [Convolutional Autoencoder](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x04-autoencoders/2-convolutional.py "Convolutional Autoencoder")
 Creates convolutional autoencoder network.
 
 ``` python
@@ -4074,11 +3758,11 @@ for i in range(10):
     plt.imshow(reconstructed[i])
 plt.show()
 ```
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x00-autoencoders/images/autoencoders-2.png)
+![image](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x04-autoencoders/images/autoencoders-2.png)
 
 ---
 
-#### [Variational Autoencoder](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x00-autoencoders/3-variational.py "Variational Autoencoder")
+#### [Variational Autoencoder](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x04-autoencoders/3-variational.py "Variational Autoencoder")
 Creates variational autoencoder network.
 
 ``` python
@@ -4128,8 +3812,8 @@ for i in range(25*25):
     plt.imshow(G[i].reshape((28, 28)))
 plt.show()
 ```
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x00-autoencoders/images/autoencoder-3-1.png)
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x00-autoencoders/images/autoencoder-3-2.png)
+![image](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x04-autoencoders/images/autoencoder-3-1.png)
+![image](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x04-autoencoders/images/autoencoder-3-2.png)
 
 ---
 
@@ -4139,10 +3823,10 @@ plt.show()
 ---
 
 
-## [13. Markov Chains and Hidden Markov Models](https://github.com/AnthonyArmour/holbertonschool-machine_learning/tree/master/unsupervised_learning/0x02-hmm)
+## [10. Markov Chains and Hidden Markov Models](https://github.com/Luffy981/holbertonschool-machine_learning/tree/master/unsupervised_learning/0x02-hmm)
 Hidden Markov Model (HMM) is a statistical Markov model in which the system being modeled is assumed to be a Markov process. As part of the definition, HMM requires that there be an observable process Y whose outcomes are "influenced" by the outcomes of X in a known way. Since X cannot be observed directly, the goal is to learn about X by observing Y. A hidden markov model is modeled using transition probabilties (the probabilty of transitioning from any hidden state to any other hidden state at a given time step) and emission probabilities (the probability of being in a hidden state given an observation).
 
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x02-hmm/images/hmm.png)
+![image](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x02-hmm/images/hmm.png)
 
 
 ### Dependencies
@@ -4154,7 +3838,7 @@ Hidden Markov Model (HMM) is a statistical Markov model in which the system bein
 ### Tasks
 The use case examples are not very intuitive, so check the documentation I provided to understand the how each function works.
 
-#### [Markov Chain](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x02-hmm/0-markov_chain.py "Markov Chain")
+#### [Markov Chain](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x02-hmm/0-markov_chain.py "Markov Chain")
 Determines the probability of a markov chain being in a particular state after a specified number of iterations.
 ``` python
 #!/usr/bin/env python3
@@ -4169,7 +3853,7 @@ if __name__ == "__main__":
 ```
 ---
 
-#### [Regular Chains](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x02-hmm/1-regular.py "Regular Chains")
+#### [Regular Chains](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x02-hmm/1-regular.py "Regular Chains")
 Determines the steady state probabilities of a regular markov chain.
 ``` python
 #!/usr/bin/env python3
@@ -4191,7 +3875,7 @@ if __name__ == '__main__':
 ```
 ---
 
-#### [Absorbing Chains](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x02-hmm/2-absorbing.py "Absorbing Chains")
+#### [Absorbing Chains](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x02-hmm/2-absorbing.py "Absorbing Chains")
 Determines if a markov chain is absorbing.
 ``` python
 #!/usr/bin/env python3
@@ -4218,7 +3902,7 @@ if __name__ == '__main__':
 ```
 ---
 
-#### [The Forward Algorithm](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x02-hmm/3-forward.py "The Forward Algorithm")
+#### [The Forward Algorithm](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x02-hmm/3-forward.py "The Forward Algorithm")
 Performs the forward algorithm for a hidden markov model.
 ``` python
 #!/usr/bin/env python3
@@ -4253,7 +3937,7 @@ if __name__ == '__main__':
 ```
 ---
 
-#### [The Viretbi Algorithm](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x02-hmm/4-viterbi.py "The Viretbi Algorithm")
+#### [The Viretbi Algorithm](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x02-hmm/4-viterbi.py "The Viretbi Algorithm")
 Calculates the most likely sequence of hidden states for a hidden markov model.
 ``` python
 #!/usr/bin/env python3
@@ -4288,7 +3972,7 @@ if __name__ == '__main__':
 ```
 ---
 
-#### [The Backward Algorithm](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x02-hmm/5-backward.py "The Backward Algorithm")
+#### [The Backward Algorithm](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x02-hmm/5-backward.py "The Backward Algorithm")
 Performs the backward algorithm for a hidden markov model.
 ``` python
 #!/usr/bin/env python3
@@ -4323,7 +4007,7 @@ if __name__ == '__main__':
 ```
 ---
 
-#### [The Baum-Welch Algorithm](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x02-hmm/6-baum_welch.py "The Baum-Welch Algorithm")
+#### [The Baum-Welch Algorithm](https://github.com/Luffy981/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x02-hmm/6-baum_welch.py "The Baum-Welch Algorithm")
 Module contains function that performs the Baum-Welch algorithm for finding locally optimal transition and emission probabilities for a Hidden Markov Model.
 
 ``` python
@@ -4360,49 +4044,3 @@ if __name__ == '__main__':
 :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 ---
-
-
-
-## [14. Generative Advesarial Network (GAN) Project](https://github.com/AnthonyArmour/holbertonschool-machine_learning/tree/master/unsupervised_learning/0x05-GANs)
-A generative adversarial network (GAN) is a class of machine learning frameworks designed by Ian Goodfellow and his colleagues. The core idea of a GAN is based on the "indirect" training through the discriminator, another neural network that is able to tell how much an input is "realistic", which itself is also being updated dynamically. This basically means that the generator is not trained to minimize the distance to a specific image, but rather to fool the discriminator. This enables the model to learn in an unsupervised manner. The generative network generates candidates while the discriminative network evaluates them. The contest operates in terms of data distributions. Typically, the generative network learns to map from a latent space to a data distribution of interest, while the discriminative network distinguishes candidates produced by the generator from the true data distribution. The generative network's training objective is to increase the error rate of the discriminative network (fool the discriminative network).
-
-Gans have been known to create very realistic artificial images of objects and also very convincing artwork.
-
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x05-GANs/images/gan-people.jpeg)
-
-### Dependencies
-| Library/Framework  | Version |
-| ------------------ | ------- |
-| Python             | ^3.7.3  |
-| numpy              | ^1.19.5 |
-| scipy              | ^1.7.3  |
-| PyTorch            | ^1.10.1 |
-
-### Tasks
-In this project, we were assigned to train a generative adversarial network to generate a normal distribution machine rather than images of people, things, or artwork.
-
-#### [Generator](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x05-GANs/5-train_GAN.py "Generator")
-Trains a generative adversarial network to generate a normal distribution.
-
-``` python
-#!/usr/bin/env python3
-
-
-import numpy as np
-import torch
-import torch.nn as nn
-import torch.optim as optim
-import plotly.express as px
-
-ganTrainer = __import__('5-train_GAN').train_gan
-
-fakeData = ganTrainer()
-
-values = fakeData.data.storage().tolist()
-fig = px.histogram(values, title="Histogram of Forged Distribution",nbins=50)
-fig.show()
-```
-
-![image](https://github.com/AnthonyArmour/holbertonschool-machine_learning/blob/master/unsupervised_learning/0x05-GANs/images/Gan-sampled.jpg)
-
---
