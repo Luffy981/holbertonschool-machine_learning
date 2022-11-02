@@ -38,8 +38,8 @@ References :
  ` pip install --user keras==2.2.4`
 
 `pip install --user Pillow`
+
 `pip install --user h5py`
- ` 
 ## Tasks
 ### 0. Breakout
 * Your script should utilize  ` keras-rl ` ‘s  ` DQNAgent ` ,  ` SequentialMemory ` , and  ` EpsGreedyQPolicy ` 
