@@ -66,6 +66,7 @@ def sarsa_lambtha(env, Q, lambtha, episodes=5000, max_steps=100,
             # if the algorithm finds the goal, the reward is updated to 1
             if env.desc.reshape(env.observation_space.n)[next_state] == b'G':
                 reward = 1
+            # BACKWARD VIEW SARSA(λ)
             # calculate delta_t
             # delta_t = R(t + 1) + gamma * Q(St + 1, At + 1) - Q(St, At)
             delta_t = reward + (
