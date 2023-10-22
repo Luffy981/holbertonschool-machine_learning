@@ -91,6 +91,10 @@
   "knowledge": {
     "languages": [
       {
+        "name": "EN",
+        "level": "Professional working proficiency"
+      },
+      {
         "name": "PT",
         "level": "Professional working proficiency"
       },
