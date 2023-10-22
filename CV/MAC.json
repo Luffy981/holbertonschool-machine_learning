@@ -344,6 +344,14 @@
         "jhonsmith981@hotmail.com"
       ]
     },
+    "preferences": {
+      "discardedCompetences": [
+        {
+          "name": "JAVA",
+          "type": "technology"
+        }
+      ]
+    },
     "status": "searchingActively"
   },
   "manfredSpecificData": {
