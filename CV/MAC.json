@@ -360,6 +360,9 @@
           "name": "JAVA",
           "type": "technology"
         }
+      ],
+      "preferredRoles": [
+        "Machine Learning Engineer"
       ]
     },
     "status": "searchingActively"
