@@ -173,12 +173,57 @@
       {
         "studyType": "officialDegree",
         "degreeAchieved": true,
+        "name": "Full  stack software engineer",
+        "startDate": "2020-04-01",
+        "institution": {
+          "name": "Holberton School Peru",
+          "URL": "https://www.linkedin.com/in/smith-flores/",
+          "image": {
+            "link": "https://media-asgard.s3.eu-west-1.amazonaws.com/23/10/22/1e272542-e36c-4a6a-86d5-b07b3f3aa079_holberton.jpeg",
+            "alt": "holberton.jpeg"
+          }
+        },
+        "finishDate": "2021-02-01",
+        "linkedCompetences": [
+          {
+            "name": "Apache",
+            "type": "technology"
+          },
+          {
+            "name": "C",
+            "type": "technology"
+          },
+          {
+            "name": "JavaScript",
+            "type": "technology"
+          },
+          {
+            "name": "Nginx",
+            "type": "technology"
+          },
+          {
+            "name": "Python",
+            "type": "technology"
+          },
+          {
+            "name": "REST",
+            "type": "technology"
+          }
+        ]
+      },
+      {
+        "studyType": "officialDegree",
+        "degreeAchieved": true,
         "name": "Machine learning engineer",
         "startDate": "2021-03-01",
         "institution": {
           "name": "Holberton School Peru",
           "description": "• Basics and advanced concepts in Machine Learning\n• Creation of models in Machine Learning\n• Computer vision\n• NLP (Natural language processing)• Basics and advanced concepts in Machine Learning • Creation of models in Machine Learning • Computer vision • NLP (Natural language processing)\nSkills: SQL · JavaScript · Node.js · Full-Stack Development · Python (Programming Language) · Natural Language Processing (NLP) · Computer Vision · Machine Learning",
-          "URL": "https://www.linkedin.com/posts/smith-flores_holbertonschoolperu-machinelearningengineer-activity-7044340254593486848-jD4o?utm_source=share&utm_medium=member_desktop"
+          "URL": "https://www.linkedin.com/posts/smith-flores_holbertonschoolperu-machinelearningengineer-activity-7044340254593486848-jD4o?utm_source=share&utm_medium=member_desktop",
+          "image": {
+            "link": "https://media-asgard.s3.eu-west-1.amazonaws.com/23/10/22/b57ba616-d847-47b5-9e8e-96d799e7f080_holberton.jpeg",
+            "alt": "holberton.jpeg"
+          }
         },
         "finishDate": "2022-04-01",
         "linkedCompetences": [
