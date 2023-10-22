@@ -342,6 +342,12 @@
       ],
       "contactMails": [
         "jhonsmith981@hotmail.com"
+      ],
+      "phoneNumbers": [
+        {
+          "number": "981851176",
+          "countryCode": "+51"
+        }
       ]
     },
     "preferences": {
