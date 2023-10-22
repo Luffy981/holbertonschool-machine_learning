@@ -212,6 +212,46 @@
         ]
       },
       {
+        "studyType": "certification",
+        "degreeAchieved": false,
+        "name": "Machine learning engineer",
+        "startDate": "2022-05-01",
+        "institution": {
+          "name": "Holberton School Peru",
+          "URL": "https://www.linkedin.com/posts/smith-flores_holbertonschoolperu-machinelearningengineer-activity-7044340254593486848-jD4o?utm_source=share&utm_medium=member_desktop",
+          "image": {
+            "link": "https://media-asgard.s3.eu-west-1.amazonaws.com/23/10/22/6cad158c-85cb-4b57-ba26-b56caa7ed342_certificadoml.jpeg",
+            "alt": "certificadoML.jpeg"
+          }
+        },
+        "linkedCompetences": [
+          {
+            "name": "Keras",
+            "type": "technology"
+          },
+          {
+            "name": "MatPlotlib",
+            "type": "technology"
+          },
+          {
+            "name": "Numpy",
+            "type": "technology"
+          },
+          {
+            "name": "Pandas",
+            "type": "technology"
+          },
+          {
+            "name": "Python",
+            "type": "technology"
+          },
+          {
+            "name": "TensorFlow",
+            "type": "technology"
+          }
+        ]
+      },
+      {
         "studyType": "officialDegree",
         "degreeAchieved": true,
         "name": "Machine learning engineer",
