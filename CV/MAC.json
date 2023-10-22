@@ -347,6 +347,10 @@
     "preferences": {
       "preferredCompetences": [
         {
+          "name": "JavaScript",
+          "type": "technology"
+        },
+        {
           "name": "Python",
           "type": "technology"
         }
