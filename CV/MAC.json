@@ -345,6 +345,12 @@
       ]
     },
     "preferences": {
+      "preferredCompetences": [
+        {
+          "name": "Python",
+          "type": "technology"
+        }
+      ],
       "discardedCompetences": [
         {
           "name": "JAVA",
