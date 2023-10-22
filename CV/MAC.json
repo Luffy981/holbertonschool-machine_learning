@@ -89,6 +89,12 @@
     ]
   },
   "knowledge": {
+    "languages": [
+      {
+        "name": "RU",
+        "level": "Limited working proficiency"
+      }
+    ],
     "hardSkills": [
       {
         "skill": {
