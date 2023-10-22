@@ -203,6 +203,47 @@
             "type": "technology"
           }
         ]
+      },
+      {
+        "studyType": "certification",
+        "degreeAchieved": false,
+        "name": "Software engineer",
+        "startDate": "2022-03-01",
+        "institution": {
+          "name": "Holberton School Peru",
+          "description": "• Full-time intensive program for foundations of computer science.\n\n• Collaborative, project-based environment makes the student ready for the real world after graduation• Full-time intensive program for foundations of computer science. • Collaborative, project-based environment makes the student ready for the real world after graduation\nSkills: Big Data · Mathematics · Git · Inglés",
+          "URL": "https://www.linkedin.com/in/smith-flores/overlay/1635505233382/single-media-viewer/?profileId=ACoAADYfv-oB2pacnY-8Alogk5Mx2SvCBq9hWh4",
+          "image": {
+            "link": "https://media-asgard.s3.eu-west-1.amazonaws.com/23/10/22/d98cd426-4ed5-4c44-9286-f52e786ab95f_certificado.jpeg",
+            "alt": "certificado.jpeg"
+          }
+        },
+        "linkedCompetences": [
+          {
+            "name": "Bash",
+            "type": "technology"
+          },
+          {
+            "name": "C",
+            "type": "technology"
+          },
+          {
+            "name": "JavaScript",
+            "type": "technology"
+          },
+          {
+            "name": "Python",
+            "type": "technology"
+          },
+          {
+            "name": "REST",
+            "type": "technology"
+          },
+          {
+            "name": "SQLAlchemy",
+            "type": "technology"
+          }
+        ]
       }
     ]
   },
