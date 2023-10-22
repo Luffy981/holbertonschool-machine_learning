@@ -168,6 +168,42 @@
           "type": "technology"
         }
       }
+    ],
+    "studies": [
+      {
+        "studyType": "officialDegree",
+        "degreeAchieved": true,
+        "name": "Machine learning engineer",
+        "startDate": "2021-03-01",
+        "institution": {
+          "name": "Holberton School Peru",
+          "description": "• Basics and advanced concepts in Machine Learning\n• Creation of models in Machine Learning\n• Computer vision\n• NLP (Natural language processing)• Basics and advanced concepts in Machine Learning • Creation of models in Machine Learning • Computer vision • NLP (Natural language processing)\nSkills: SQL · JavaScript · Node.js · Full-Stack Development · Python (Programming Language) · Natural Language Processing (NLP) · Computer Vision · Machine Learning",
+          "URL": "https://www.linkedin.com/posts/smith-flores_holbertonschoolperu-machinelearningengineer-activity-7044340254593486848-jD4o?utm_source=share&utm_medium=member_desktop"
+        },
+        "finishDate": "2022-04-01",
+        "linkedCompetences": [
+          {
+            "name": "Github",
+            "type": "technology"
+          },
+          {
+            "name": "Keras",
+            "type": "technology"
+          },
+          {
+            "name": "Numpy",
+            "type": "technology"
+          },
+          {
+            "name": "Python",
+            "type": "technology"
+          },
+          {
+            "name": "TensorFlow",
+            "type": "technology"
+          }
+        ]
+      }
     ]
   },
   "careerPreferences": {
