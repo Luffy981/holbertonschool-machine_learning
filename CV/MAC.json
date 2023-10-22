@@ -1,0 +1,203 @@
+{
+  "$schema": "https://raw.githubusercontent.com/getmanfred/mac/v0.3/schema/schema.json",
+  "settings": {
+    "language": "ES",
+    "MACVersion": "0.3"
+  },
+  "aboutMe": {
+    "profile": {
+      "name": "Smith",
+      "surnames": "Flores Chanta",
+      "title": "Machine Learning engineer | Fullstack Software Engineer",
+      "description": "I am a passionate Machine Learning professional with over 1 of experience tackling challenging data analysis and predictive modeling projects. I possess an in-depth understanding of advanced techniques such as neural networks, classification and regression algorithms, and have a knack for transforming large datasets into actionable insights that drive decision-making and bring value to businesses.\n\nThroughout my career, I have collaborated with interdisciplinary teams to deploy data-driven solutions, optimize algorithms, and enhance the accuracy and efficiency of models. I am proficient in  Python, TensorFlow, Scikit-learn, I'm always eager to learn, adapt, and take on new challenges, and I'm seeking an opportunity where I can actively contribute and grow alongside a dynamic team.\n\nAny questions I will be happy to answer or chat, also, if you want me to explain to you a topic that is within my range of knowledge, write to me and we can take the time, I am here to help :)",
+      "avatar": {
+        "link": "https://media-asgard.s3.eu-west-1.amazonaws.com/23/10/22/56447a4f-175d-47c0-9cdf-b9b384e8694f_linkedin-photo-45916.linkedin-photo-45916",
+        "alt": "23/10/22/56447a4f-175d-47c0-9cdf-b9b384e8694f_linkedin-photo-45916.linkedin-photo-45916"
+      },
+      "location": {
+        "notes": "Autocompleted using Google Maps API (id: ChIJ9RRZwFDIBZERSAYheRIBnvI)",
+        "country": "Perú"
+      }
+    },
+    "relevantLinks": [
+      {
+        "type": "linkedin",
+        "URL": "https://www.linkedin.com/in/smith-flores/"
+      }
+    ]
+  },
+  "experience": {
+    "jobs": [
+      {
+        "organization": {
+          "name": "SABBI",
+          "image": {
+            "link": "https://media-asgard.s3.eu-west-1.amazonaws.com/23/10/22/a9db3a5f-146b-4605-aa45-d0650b8058f2_linkedin-photo-45916.linkedin-photo-45916",
+            "alt": "23/10/22/a9db3a5f-146b-4605-aa45-d0650b8058f2_linkedin-photo-45916.linkedin-photo-45916"
+          }
+        },
+        "roles": [
+          {
+            "name": "Machine Learning Engineer | Fullstack Software Engineer",
+            "startDate": "2023-05-01",
+            "challenges": [
+              {
+                "description": "Skills: Artificial Intelligence (AI) · DevOps · Full-Stack Development · Python (Programming Language) · Machine Learning"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "organization": {
+          "name": "SIDERPERU",
+          "image": {
+            "link": "https://media-asgard.s3.eu-west-1.amazonaws.com/23/10/22/f6d10268-b766-4b9f-8120-7b8fc220c8b5_linkedin-photo-45916.linkedin-photo-45916",
+            "alt": "23/10/22/f6d10268-b766-4b9f-8120-7b8fc220c8b5_linkedin-photo-45916.linkedin-photo-45916"
+          }
+        },
+        "roles": [
+          {
+            "name": "Software Engineer",
+            "startDate": "2022-02-01",
+            "finishDate": "2022-03-31",
+            "challenges": [
+              {
+                "description": "• Software of inventory to manage data of the enterprise\n• Developed with Python, Flask, React hooks, ORM-SqlAlchemy\n• Create basemodel\n• Use ORM sql-Alchemy to manage databases\n• Use MUI and React to develop front-end\n• Use React Hooks\n• Make APIs with Flask and Python\n• Connect back-end with front-end"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "organization": {
+          "name": "Airbnb clone"
+        },
+        "roles": [
+          {
+            "name": "Python Developer",
+            "startDate": "2021-08-01",
+            "finishDate": "2023-05-31",
+            "challenges": [
+              {
+                "description": "• Clone of AirBnb web application\n• Developed with Python, Flask, ORM-SqlAlchemy, HTML CSS and Javascript\n• Create basemodel\n• Use ORM sql-Alchemy to manage databases\n• Use HTML, CSS and Javascript to develop front-end\n• Make APIs with Flask and Python\n• Connect back-end with front-end\n• Deploy on NGINX servers with Linux operating system, load balancer, firewalls and SSL certificate"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "knowledge": {
+    "hardSkills": [
+      {
+        "skill": {
+          "name": "API",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "AWS CloudFormation",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "BigQuery",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "Fastapi",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "Flask",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "Github",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "JavaScript",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "MySQL",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "Numpy",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "Python",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "REST",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "SQLAlchemy",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "TensorFlow",
+          "type": "technology"
+        }
+      }
+    ]
+  },
+  "careerPreferences": {
+    "contact": {
+      "publicProfiles": [
+        {
+          "URL": "https://www.linkedin.com/in/smith-flores/",
+          "type": "linkedin"
+        }
+      ],
+      "contactMails": [
+        "jhonsmith981@hotmail.com"
+      ]
+    },
+    "status": "searchingActively"
+  },
+  "manfredSpecificData": {
+    "mainStackTechs": [
+      {
+        "name": "Python",
+        "type": "technology"
+      },
+      {
+        "name": "REST",
+        "type": "technology"
+      },
+      {
+        "name": "TensorFlow",
+        "type": "technology"
+      }
+    ]
+  }
+}
