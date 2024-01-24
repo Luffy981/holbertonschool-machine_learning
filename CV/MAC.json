@@ -1,8 +1,8 @@
 {
-  "$schema": "https://raw.githubusercontent.com/getmanfred/mac/v0.3/schema/schema.json",
+  "$schema": "https://raw.githubusercontent.com/getmanfred/mac/v0.5/schema/schema.json",
   "settings": {
     "language": "ES",
-    "MACVersion": "0.3"
+    "MACVersion": "0.5"
   },
   "aboutMe": {
     "profile": {
@@ -92,22 +92,27 @@
     "languages": [
       {
         "name": "EN",
+        "fullName": "Inglés",
         "level": "Professional working proficiency"
       },
       {
         "name": "ES",
+        "fullName": "Español",
         "level": "Native or bilingual proficiency"
       },
       {
         "name": "JP",
+        "fullName": "Japonés",
         "level": "Limited working proficiency"
       },
       {
         "name": "PT",
+        "fullName": "Portugués",
         "level": "Professional working proficiency"
       },
       {
         "name": "RU",
+        "fullName": "Ruso",
         "level": "Limited working proficiency"
       }
     ],
@@ -364,12 +369,6 @@
       ],
       "contactMails": [
         "jhonsmith981@hotmail.com"
-      ],
-      "phoneNumbers": [
-        {
-          "number": "981851176",
-          "countryCode": "+51"
-        }
       ]
     },
     "preferences": {
